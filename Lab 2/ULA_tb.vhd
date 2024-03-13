@@ -37,6 +37,26 @@ begin
 		op <= "101"; wait for 50 ns; --OR
 		op <= "110"; wait for 50 ns; --not(in_A)
 		op <= "111"; wait for 50 ns; --not(in_B)
+		in_A <= "0000000000001000";
+		in_B <= "0000000000000100";
+		op <= "000"; wait for 50 ns; --Soma
+		op <= "001"; wait for 50 ns; --subtração
+		op <= "010"; wait for 50 ns; --divisão
+		op <= "011"; wait for 50 ns; --multiplicação****
+		op <= "100"; wait for 50 ns; --AND
+		op <= "101"; wait for 50 ns; --OR
+		op <= "110"; wait for 50 ns; --not(in_A)
+		op <= "111"; wait for 50 ns; --not(in_B)
+		in_A <= "0000000000001010";
+		in_B <= "0000000000000110";
+		op <= "000"; wait for 50 ns; --Soma
+		op <= "001"; wait for 50 ns; --subtração
+		op <= "010"; wait for 50 ns; --divisão
+		op <= "011"; wait for 50 ns; --multiplicação****
+		op <= "100"; wait for 50 ns; --AND
+		op <= "101"; wait for 50 ns; --OR
+		op <= "110"; wait for 50 ns; --not(in_A)
+		op <= "111"; wait for 50 ns; --not(in_B)
 		wait;
 	end process;
 end architecture;
