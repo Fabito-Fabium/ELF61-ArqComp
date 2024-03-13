@@ -1,3 +1,6 @@
+--RA: 2358263 => 8263
+--RA: 2358310 => 8310
+--RA: 2378345 => 8345
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
@@ -6,6 +9,7 @@ entity ULA_tb is
 end entity;
 
 architecture Run_tb of ULA_tb is
+
 component ULA
 	port (
 		in_A: 		in unsigned (15 downto 0);
@@ -37,8 +41,8 @@ begin
 		op <= "101"; wait for 50 ns; --OR
 		op <= "110"; wait for 50 ns; --not(in_A)
 		op <= "111"; wait for 50 ns; --not(in_B)
-		in_A <= "0000000000001000";
-		in_B <= "0000000000000100";
+		in_A <= "0000000000010011";
+		in_B <= "0000000000001001";
 		op <= "000"; wait for 50 ns; --Soma
 		op <= "001"; wait for 50 ns; --subtração (em módulo)
 		op <= "010"; wait for 50 ns; --divisão
@@ -47,8 +51,18 @@ begin
 		op <= "101"; wait for 50 ns; --OR
 		op <= "110"; wait for 50 ns; --not(in_A)
 		op <= "111"; wait for 50 ns; --not(in_B)
-		in_A <= "0000000000001010";
-		in_B <= "0000000000000110";
+		in_A <= "0000000000000011";
+		in_B <= "0000000000001001";
+		op <= "000"; wait for 50 ns; --Soma
+		op <= "001"; wait for 50 ns; --subtração (em módulo)
+		op <= "010"; wait for 50 ns; --divisão
+		op <= "011"; wait for 50 ns; --multiplicação
+		op <= "100"; wait for 50 ns; --AND
+		op <= "101"; wait for 50 ns; --OR
+		op <= "110"; wait for 50 ns; --not(in_A)
+		op <= "111"; wait for 50 ns; --not(in_B)
+		in_A <= to_unsigned(16#008345#, in_A'length);
+		in_B <= to_unsigned(16#008263#, in_B'length);
 		op <= "000"; wait for 50 ns; --Soma
 		op <= "001"; wait for 50 ns; --subtração (em módulo)
 		op <= "010"; wait for 50 ns; --divisão
