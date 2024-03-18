@@ -73,8 +73,8 @@ begin
 		op <= "101"; wait for 50 ns; --OR
 		op <= "110"; wait for 50 ns; --not(in_A)
 		op <= "111"; wait for 50 ns; --not(in_B)
-		in_A <= to_unsigned(10#008345#, in_A'length);
-		in_B <= to_unsigned(10#008263#, in_B'length);
+		in_A <= to_unsigned(10#008345#, in_A'length); --RA 4LSd, caso hex, basta alterar 10 p/ 16
+		in_B <= to_unsigned(10#008263#, in_B'length); --RA 4LSd, caso hex, basta alterar 10 p/ 16
 		op <= "000"; wait for 50 ns; --Soma
 		op <= "001"; wait for 50 ns; --subtração (em módulo)
 		op <= "010"; wait for 50 ns; --divisão

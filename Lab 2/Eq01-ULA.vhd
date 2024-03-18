@@ -27,7 +27,6 @@ end entity;
 architecture ULA_arch of ULA is
 
 signal inter_out: 		unsigned(15 downto 0);
-signal inter_LT:		std_logic;
 
 begin
 
@@ -42,9 +41,8 @@ begin
 			"0000000000000000";
 	out_ULA		<= inter_out;
 			
-	inter_LT <= 	'1' when std_logic_vector(in_A) < std_logic_vector(in_B) else 
+	LT 	<= 	'1' when std_logic_vector(in_A) < std_logic_vector(in_B) else 
 			'0';
-	LT 	 <= inter_LT;
 	
 	zero 	 <=	'1' when std_logic_vector(inter_out) = "0000000000000000" else 
 			'0';
