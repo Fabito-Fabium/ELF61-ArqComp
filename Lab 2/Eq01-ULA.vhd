@@ -1,12 +1,12 @@
--- ELF61 -> ARQUITETURA E ORGANIZAÇÃO DE COMPUTADORES --
--- UNIVERSIDADE TECNOLÓGICA FEDERAL DO PARANÁ
--- DEPARTAMENTO ACADÊMICO DE ENGENHARIA ELETRÔNICA
--- O SEGUINTE CÓDIGO FOI DESENVOLVIDO PELOS ALUNOS:
--- ACYR EDUARTO MARCONATTO : 2358263
+-- ELF61 -> ARQUITETURA E ORGANIZACAO DE COMPUTADORES --
+-- UNIVERSIDADE TECNOLOGICA FEDERAL DO PARANA
+-- DEPARTAMENTO ACADEMICO DE ENGENHARIA ELETRONICA
+-- O SEGUINTE CODIGO FOI DESENVOLVIDO PELOS ALUNOS:
+-- ACYR EDUARDO MARCONATTO : 2358263
 -- FABIO ZHAO YUAN WANG : 2358310
 -- VICTOR AUGUSTO DEL MONEGO : 2378345
 
--- INÍCIO DO CÓDIGO
+-- INICIO DO CODIGO
 
 library ieee;
 use ieee.std_logic_1164.all;
@@ -30,14 +30,14 @@ signal inter_out: 		unsigned(15 downto 0);
 
 begin
 
-	inter_out <=   	in_A + in_B 		when op="000" else
-			in_A - in_B 		when op="001" else
-			in_A / in_B 		when op="010" else
-			resize(in_A * in_B, 16)	when op="011" else
-			in_A and in_B 		when op="100" else
-			in_A or in_B 		when op="101" else
-			not in_A 		when op="110" else
-			not in_B 		when op="111" else
+	inter_out <=   	in_A + in_B 			when op="000" else
+			in_A - in_B 			when op="001" else
+			in_A / in_B 			when op="010" else
+			resize(in_A * in_B, 16)		when op="011" else
+			in_A and in_B 			when op="100" else
+			in_A or in_B 			when op="101" else
+			not in_A 			when op="110" else
+			not in_B 			when op="111" else
 			"0000000000000000";
 	out_ULA		<= inter_out;
 			
@@ -50,4 +50,4 @@ begin
 end architecture;		
 
 
--- FIM DO CÓDIGO
+-- FIM DO CODIGO
