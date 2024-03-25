@@ -5,6 +5,17 @@
 -- versão 2.0 - 2022-03-11 - adaptação para a placa DE10-Lite
 -- versão 2.1 - limpeza para circuito combinacional apenas 
 
+-- ELF61 -> ARQUITETURA E ORGANIZACAO DE COMPUTADORES --
+-- UNIVERSIDADE TECNOLOGICA FEDERAL DO PARANA
+-- DEPARTAMENTO ACADEMICO DE ENGENHARIA ELETRONICA
+-- O SEGUINTE CODIGO FOI DESENVOLVIDO PELOS ALUNOS:
+-- ACYR EDUARDO MARCONATTO : 2358263
+-- FABIO ZHAO YUAN WANG : 2358310
+-- VICTOR AUGUSTO DEL MONEGO : 2378345
+-- O SEGUINTE CIRCUITO VHDL, JUNTAMENTE COM O CIRCUITO DE TOP LEVEL, CONTÉM UM TOTAL DE 469 ELEMENTOS LÓGICOS, DE ACORDO COM O RELATÓRIO DE COMPILAÇÃO DO QUARTUS PRIME
+
+-- INICIO DO CODIGO
+
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
@@ -37,7 +48,7 @@ end entity;
 architecture arch of toplevel is
 		 component displays is
 			  port(
-					dado_in   : in unsigned (7 downto 0);         -- numero binario de entrada
+					inA, inB, inC   : in unsigned (7 downto 0);         -- numero binario de entrada
 					disp0_out : out std_logic_vector(6 downto 0); -- display LSd convertido para 7 segmentos
 					disp1_out : out std_logic_vector(6 downto 0); -- 
 					disp2_out : out std_logic_vector(6 downto 0); -- 
@@ -67,7 +78,9 @@ architecture arch of toplevel is
 
 begin
 	display: displays port map (
-		dado_in=>resize(out_ULA, 8),
+		resize(in_A, 8),
+		resize(in_B, 8),
+		resize(out_ULA, 8),
 		disp0_out=> HEX0_HW,
 		disp1_out=> HEX1_HW,
 		disp2_out=> HEX2_HW,
@@ -82,3 +95,6 @@ begin
 	
 	op   <= "0" & SWITCH_HW (9) & SWITCH_HW (8);
 end architecture ;
+
+
+-- FIM DO CODIGO

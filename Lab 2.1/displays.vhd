@@ -6,6 +6,17 @@
 -- CONVERSAO DO NUMERO BINARIO PARA ESCRITA NOS DISPLAYS 7 SEGMENTOS
 -- versão 3.0 - 2022-08-30 - correção da tabela de decodificação Bin-BCD
 
+-- ELF61 -> ARQUITETURA E ORGANIZACAO DE COMPUTADORES --
+-- UNIVERSIDADE TECNOLOGICA FEDERAL DO PARANA
+-- DEPARTAMENTO ACADEMICO DE ENGENHARIA ELETRONICA
+-- O SEGUINTE CODIGO FOI DESENVOLVIDO PELOS ALUNOS:
+-- ACYR EDUARDO MARCONATTO : 2358263
+-- FABIO ZHAO YUAN WANG : 2358310
+-- VICTOR AUGUSTO DEL MONEGO : 2378345
+-- O SEGUINTE CIRCUITO VHDL, JUNTAMENTE COM O CIRCUITO DE TOP LEVEL, CONTÉM UM TOTAL DE 469 ELEMENTOS LÓGICOS, DE ACORDO COM O RELATÓRIO DE COMPILAÇÃO DO QUARTUS PRIME
+
+-- INICIO DO CODIGO
+
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
@@ -13,13 +24,13 @@ use ieee.numeric_std.all;
 
 entity displays is
     port (
-        dado_in   : in unsigned (7 downto 0); -- numero binario de entrada
-        disp0_out : out unsigned(6 downto 0); -- display LSd convertido para 7 segmentos
-        disp1_out : out unsigned(6 downto 0); -- display MSd convertido - nao usado
-        disp2_out : out unsigned(6 downto 0); -- nao usado
-        disp3_out : out unsigned(6 downto 0); -- nao usado
-		  disp4_out : out unsigned(6 downto 0); -- nao usado
-		  disp5_out : out unsigned(6 downto 0)  -- nao usado
+        inA, inB, inC   : in unsigned (7 downto 0); -- numero binario de entrada
+        disp0_out 		: out unsigned(6 downto 0); -- display LSd convertido para 7 segmentos
+        disp1_out 		: out unsigned(6 downto 0); -- display MSd convertido - nao usado
+        disp2_out 		: out unsigned(6 downto 0); -- nao usado
+        disp3_out 		: out unsigned(6 downto 0); -- nao usado
+		  disp4_out 		: out unsigned(6 downto 0); -- nao usado
+		  disp5_out 		: out unsigned(6 downto 0)  -- nao usado
     );
 end entity;
 
@@ -50,9 +61,9 @@ architecture arch of displays is
 	);
 
     -- auxiliares para conversao
-    signal dado_BCD          : unsigned(7 downto 0);  -- dado_in em BCD
-    signal digito0, digito1  : unsigned(3 downto 0);  -- digitos BCD separados
-    signal display0,display1 : unsigned(6 downto 0);  -- 7 segmentos para os displays
+    signal BCD0, 	BCD1, BCD2          : unsigned(7 downto 0);  -- inA em BCD
+    signal dgt0,	dgt1,	dgt2,	dgt3,	dgt4, dgt5  : unsigned(3 downto 0);  -- digitos BCD separados
+    signal dsp0,	dsp1, dsp2, dsp3, dsp4, dsp5 : unsigned(6 downto 0);  -- 7 segmentos para os displays
 
 
 -- IMPLEMENTACAO PROPRIAMENTE DITA    
@@ -61,43 +72,96 @@ begin
 
     -------------------------------------------------
     -- DECODIFICACAO DA ENTRADA BINARIA PARA BCD
-    dado_BCD <= conteudo_BCD (to_integer (unsigned(dado_in)));
-    digito0  <= dado_BCD (3 downto 0);
-    digito1  <= dado_BCD (7 downto 4);
+    BCD0 <= conteudo_BCD (to_integer (unsigned(inA)));
+    dgt0  <= BCD0 (3 downto 0);
+    dgt1  <= BCD0 (7 downto 4);
+	 
+	 BCD1 <= conteudo_BCD (to_integer (unsigned(inB)));
+    dgt2  <= BCD1 (3 downto 0);
+    dgt3  <= BCD1 (7 downto 4);
 
+	 BCD2 <= conteudo_BCD (to_integer (unsigned(inC)));
+    dgt4  <= BCD2 (3 downto 0);
+    dgt5  <= BCD2 (7 downto 4);
     -------------------------------------------------
     -- DECODIFICACAO DOS DIGITOS PARA 7 SEGMENTOS
     -- os segmentos sao "gfedcba", 0 acende e 1 apaga
-    display0 <= "1000000" when digito0="0000" else 
-                "1111001" when digito0="0001" else
-                "0100100" when digito0="0010" else
-                "0110000" when digito0="0011" else
-                "0011001" when digito0="0100" else
-                "0010010" when digito0="0101" else
-                "0000010" when digito0="0110" else
-                "1111000" when digito0="0111" else
-                "0000000" when digito0="1000" else
-                "0010000" when digito0="1001" else
+    dsp0 <= "1000000" when dgt0="0000" else 
+                "1111001" when dgt0="0001" else
+                "0100100" when dgt0="0010" else
+                "0110000" when dgt0="0011" else
+                "0011001" when dgt0="0100" else
+                "0010010" when dgt0="0101" else
+                "0000010" when dgt0="0110" else
+                "1111000" when dgt0="0111" else
+                "0000000" when dgt0="1000" else
+                "0010000" when dgt0="1001" else
                 "0111111";                           --- traco horizontal
-    display1 <= "1000000" when digito1="0000" else 
-                "1111001" when digito1="0001" else
-                "0100100" when digito1="0010" else
-                "0110000" when digito1="0011" else
-                "0011001" when digito1="0100" else
-                "0010010" when digito1="0101" else
-                "0000010" when digito1="0110" else
-                "1111000" when digito1="0111" else
-                "0000000" when digito1="1000" else
-                "0010000" when digito1="1001" else
+    dsp1 <= "1000000" when dgt1="0000" else 
+                "1111001" when dgt1="0001" else
+                "0100100" when dgt1="0010" else
+                "0110000" when dgt1="0011" else
+                "0011001" when dgt1="0100" else
+                "0010010" when dgt1="0101" else
+                "0000010" when dgt1="0110" else
+                "1111000" when dgt1="0111" else
+                "0000000" when dgt1="1000" else
+                "0010000" when dgt1="1001" else
                 "0111111";                           --- traco horizontal
-
+    dsp2 <= "1000000" when dgt2="0000" else 
+                "1111001" when dgt2="0001" else
+                "0100100" when dgt2="0010" else
+                "0110000" when dgt2="0011" else
+                "0011001" when dgt2="0100" else
+                "0010010" when dgt2="0101" else
+                "0000010" when dgt2="0110" else
+                "1111000" when dgt2="0111" else
+                "0000000" when dgt2="1000" else
+                "0010000" when dgt2="1001" else
+                "0111111";                           --- traco horizontal
+    dsp3 <= "1000000" when dgt3="0000" else 
+                "1111001" when dgt3="0001" else
+                "0100100" when dgt3="0010" else
+                "0110000" when dgt3="0011" else
+                "0011001" when dgt3="0100" else
+                "0010010" when dgt3="0101" else
+                "0000010" when dgt3="0110" else
+                "1111000" when dgt3="0111" else
+                "0000000" when dgt3="1000" else
+                "0010000" when dgt3="1001" else
+                "0111111";                           --- traco horizontal
+    dsp4 <= "1000000" when dgt4="0000" else 
+                "1111001" when dgt4="0001" else
+                "0100100" when dgt4="0010" else
+                "0110000" when dgt4="0011" else
+                "0011001" when dgt4="0100" else
+                "0010010" when dgt4="0101" else
+                "0000010" when dgt4="0110" else
+                "1111000" when dgt4="0111" else
+                "0000000" when dgt4="1000" else
+                "0010000" when dgt4="1001" else
+                "0111111";                           --- traco horizontal
+    dsp5 <= "1000000" when dgt5="0000" else 
+                "1111001" when dgt5="0001" else
+                "0100100" when dgt5="0010" else
+                "0110000" when dgt5="0011" else
+                "0011001" when dgt5="0100" else
+                "0010010" when dgt5="0101" else
+                "0000010" when dgt5="0110" else
+                "1111000" when dgt5="0111" else
+                "0000000" when dgt5="1000" else
+                "0010000" when dgt5="1001" else
+                "0111111";                           --- traco horizontal					 
     -------------------------------------------------
     -- ESCRITA EFETIVA NOS PINOS DE SAIDA
-    disp0_out <= display0;
-    disp1_out <= display1;
-    disp2_out <= "1111111";  -- nao utilizado
-    disp3_out <= "1111111";  -- nao utilizado
-	 disp4_out <= "1111111";  -- nao utilizado
-	 disp5_out <= "1111111";  -- nao utilizado
+    disp0_out <= dsp0;
+    disp1_out <= dsp1;
+    disp2_out <= dsp2;  -- nao utilizado
+    disp3_out <= dsp3;  -- nao utilizado
+	 disp4_out <= dsp4;  -- nao utilizado
+	 disp5_out <= dsp5;  -- nao utilizado
 
 end architecture;
+
+
+-- FIM DO CODIGO

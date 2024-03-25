@@ -44,14 +44,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "HEX1_HW[1]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX1_HW[2]",
-					"strict" : false
-				},
-				{
 					"name" : "HEX1_HW[3]",
 					"strict" : false
 				},
@@ -64,7 +56,103 @@
 					"strict" : false
 				},
 				{
-					"name" : "HEX1_HW[6]",
+					"name" : "HEX2_HW[0]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX2_HW[1]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX2_HW[2]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX2_HW[3]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX2_HW[4]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX2_HW[5]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX2_HW[6]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX3_HW[0]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX3_HW[3]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX3_HW[4]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX3_HW[5]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX4_HW[0]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX4_HW[1]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX4_HW[2]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX4_HW[3]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX4_HW[4]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX4_HW[5]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX4_HW[6]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX5_HW[0]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX5_HW[1]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX5_HW[2]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX5_HW[3]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX5_HW[4]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX5_HW[5]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX5_HW[6]",
 					"strict" : false
 				},
 				{
@@ -88,15 +176,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "SWITCH_HW[2]",
-					"strict" : false
-				},
-				{
 					"name" : "SWITCH_HW[9]",
 					"strict" : false
 				},
 				{
 					"name" : "SWITCH_HW[8]",
+					"strict" : false
+				},
+				{
+					"name" : "SWITCH_HW[2]",
 					"strict" : false
 				},
 				{
