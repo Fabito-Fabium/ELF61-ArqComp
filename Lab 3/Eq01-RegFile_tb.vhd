@@ -22,7 +22,7 @@ component RegFile is
 port( 	clk, rst, wr_en:	in std_logic;
 	A1, A2, A3:		in unsigned(2 downto 0);
 	WD3:			in unsigned(15 downto 0);
-	RD1, RD2:		out unsigned(15 downto 0)
+	RD1, RD2:		out unsigned(15 downto 0) 	:= x"0000"
 	);
 end component;
 
@@ -37,22 +37,53 @@ begin
 	tb: 	RegFile port map(clk, rst, wr_en, A1, A2, A3, WD3, RD1, RD2);
 	
 	process begin
-		rst 	<= '1'; 	wait for 50 ns;--zerar todos os registradores
+		--config inicial p/ deixar o ghw mais legivel
 		rst	<= '0';
-		WD3	<= x"ABCD";
-		wr_en 	<= '1';
-		A3	<= "000";
-		clk 	<= '1'; 	wait for 50 ns;
-		clk 	<= '0';		wait for 50 ns;
-		wr_en 	<= '1';
-		A3	<= "001";
+		clk 	<= '0';
+		wr_en 	<= '0';
+		WD3	<= x"0000";
+		A3	<= "000";	wait for 50 ns; --para explicitar reset
+		
+		--reset explicito
+		rst 	<= '1'; 	wait for 50 ns;
+		rst	<= '0';		wait for 50 ns;
+		
+		
+		WD3	<= x"1111"; 	wait for 50 ns;
+		wr_en 	<= '1';		wait for 50 ns;
+		A3	<= "000";	wait for 50 ns;
 		clk 	<= '1'; 	wait for 50 ns;
 		clk 	<= '0';		wait for 50 ns;
 		wr_en	<= '0';		wait for 50 ns;
-		A1 	<= "000";
-		A2	<= "001"; 	wait for 50 ns;
-		A1	<= "001";
-		A2	<= "000";	wait for 50 ns;
+		
+		
+		WD3	<= x"4567"; 	wait for 50 ns;
+		wr_en 	<= '1';		wait for 50 ns;
+		A3	<= "001";	wait for 50 ns;
+		clk 	<= '1'; 	wait for 50 ns;
+		clk 	<= '0';		wait for 50 ns;
+		wr_en	<= '0';		wait for 50 ns;
+		
+		
+		WD3	<= x"89AB"; 	wait for 50 ns;
+		wr_en 	<= '1';		wait for 50 ns;
+		A3	<= "010";	wait for 50 ns;
+		clk 	<= '1'; 	wait for 50 ns;
+		clk 	<= '0';		wait for 50 ns;
+		wr_en	<= '0';		wait for 50 ns;
+		
+		
+		WD3	<= x"CDEF"; 	wait for 50 ns;
+		wr_en 	<= '1';		wait for 50 ns;
+		A3	<= "011";	wait for 50 ns;
+		clk 	<= '1'; 	wait for 50 ns;
+		clk 	<= '0';		wait for 50 ns;
+		wr_en	<= '0';		wait for 50 ns;
+		
+		A1	<= "000";	wait for 50 ns;
+		A2	<= "001";	wait for 50 ns;
+		A1	<= "010";	wait for 50 ns;
+		A2	<= "011";	wait for 50 ns;
 		wait;
 		
 	end process;
