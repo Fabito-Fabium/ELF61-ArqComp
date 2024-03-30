@@ -1,0 +1,10 @@
+v 3
+file . "Eq01-RegFile.vhd" "20240330205524.000" "20240330175624.822":
+  entity regfile at 11( 348) + 0 on 19;
+  architecture op_regfile of regfile at 22( 624) + 0 on 20;
+file . "Eq01-reg16bits.vhd" "20240330205504.000" "20240330175624.800":
+  entity reg16bits at 10( 346) + 0 on 17;
+  architecture a_reg8bits of reg16bits at 22( 608) + 0 on 18;
+file . "Eq01-RegFile_tb.vhd" "20240330201948.000" "20240330175624.843":
+  entity regfile_tb at 12( 350) + 0 on 21;
+  architecture run_tb of regfile_tb at 19( 461) + 0 on 22;

@@ -4,6 +4,11 @@ normal=$(tput sgr0)
 #This is a small project developed with the intent of learning a bit of shell script to not type at all when it comes to ghdl and gtkwave commands. (so yeah, I'm really lazy.)
 echo -e "${bold}DISCLAIMER! ${normal}Before using this .sh please certify that it is inside the folder with the VHDL files you want to process. And ${bold}DO NOT run this script${normal} if there is a file that is not a ${bold}.vhd, .ghw${normal} or ${bold}.sh${normal} if you don't wish it gone.\n"
 
+read -p "Enter Directory: " direct
+ls
+
+cd $direct
+
 while true; do
     read -p "${bold}Do you wish to proceed? (y/n): ${normal}" yn
     case $yn in
@@ -37,7 +42,7 @@ fi
 ghdl -a Eq01-"$main".vhd Eq01-"$main"_tb.vhd
 ghdl -e "$main"_tb
 ghdl -r "$main"_tb --stop-time="$time"ns --wave=Eq01-"$main".ghw
-find . -type f ! -name '*.vhd' -and ! -name '*.sh' -and ! -name '*.ghw' -and ! -name '*.zip' -delete
+find . -type f ! -name '*.vhd' -and ! -name '*.sh' -and ! -name '*.ghw' -and ! -name '*.zip' -and ! -name '*.bat' -delete
 gtkwave Eq01-"$main".ghw
 
 echo -e "\n${bold}by Fabio Z. Y. Wang${Normal}\n"
