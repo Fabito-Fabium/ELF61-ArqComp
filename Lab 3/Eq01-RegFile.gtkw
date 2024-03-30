@@ -1,11 +1,11 @@
 [*]
 [*] GTKWave Analyzer v3.3.118 (w)1999-2023 BSI
-[*] Wed Mar 27 03:14:58 2024
+[*] Sat Mar 30 02:00:12 2024
 [*]
 [dumpfile] "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 3/Eq01-RegFile.ghw"
-[dumpfile_mtime] "Wed Mar 27 03:14:42 2024"
-[dumpfile_size] 3109
-[savefile] "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 3/dude.gtkw"
+[dumpfile_mtime] "Sat Mar 30 01:59:27 2024"
+[dumpfile_size] 3100
+[savefile] "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 3/Eq01-RegFile.gtkw"
 [timestart] 0
 [size] 1920 965
 [pos] -27 -24
@@ -20,14 +20,14 @@
 top.regfile_tb.wr_en
 top.regfile_tb.rst
 top.regfile_tb.clk
-@22
+@25
 #{top.regfile_tb.rd2[15:0]} top.regfile_tb.rd2[15] top.regfile_tb.rd2[14] top.regfile_tb.rd2[13] top.regfile_tb.rd2[12] top.regfile_tb.rd2[11] top.regfile_tb.rd2[10] top.regfile_tb.rd2[9] top.regfile_tb.rd2[8] top.regfile_tb.rd2[7] top.regfile_tb.rd2[6] top.regfile_tb.rd2[5] top.regfile_tb.rd2[4] top.regfile_tb.rd2[3] top.regfile_tb.rd2[2] top.regfile_tb.rd2[1] top.regfile_tb.rd2[0]
+@24
 #{top.regfile_tb.rd1[15:0]} top.regfile_tb.rd1[15] top.regfile_tb.rd1[14] top.regfile_tb.rd1[13] top.regfile_tb.rd1[12] top.regfile_tb.rd1[11] top.regfile_tb.rd1[10] top.regfile_tb.rd1[9] top.regfile_tb.rd1[8] top.regfile_tb.rd1[7] top.regfile_tb.rd1[6] top.regfile_tb.rd1[5] top.regfile_tb.rd1[4] top.regfile_tb.rd1[3] top.regfile_tb.rd1[2] top.regfile_tb.rd1[1] top.regfile_tb.rd1[0]
 #{top.regfile_tb.wd3[15:0]} top.regfile_tb.wd3[15] top.regfile_tb.wd3[14] top.regfile_tb.wd3[13] top.regfile_tb.wd3[12] top.regfile_tb.wd3[11] top.regfile_tb.wd3[10] top.regfile_tb.wd3[9] top.regfile_tb.wd3[8] top.regfile_tb.wd3[7] top.regfile_tb.wd3[6] top.regfile_tb.wd3[5] top.regfile_tb.wd3[4] top.regfile_tb.wd3[3] top.regfile_tb.wd3[2] top.regfile_tb.wd3[1] top.regfile_tb.wd3[0]
 @28
 #{top.regfile_tb.a3[2:0]} top.regfile_tb.a3[2] top.regfile_tb.a3[1] top.regfile_tb.a3[0]
 #{top.regfile_tb.a2[2:0]} top.regfile_tb.a2[2] top.regfile_tb.a2[1] top.regfile_tb.a2[0]
-@29
 #{top.regfile_tb.a1[2:0]} top.regfile_tb.a1[2] top.regfile_tb.a1[1] top.regfile_tb.a1[0]
 [pattern_trace] 1
 [pattern_trace] 0
