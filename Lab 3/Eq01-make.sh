@@ -15,13 +15,13 @@ done
 clear && printf '\e[3J'
 read -p "Enter simulation time in ${bold}ns${normal}: " time
 
-main=$(find . -name "*_tb.vhd")
+main=$(find . -name "Eq01*_tb.vhd")
 len=${#main}
 main=${main:7:$len-14}
 
-comp=$(find . -name "*.vhd" -and ! -name "*$main*")
+comp=$(find . -name "Eq01*.vhd" -and ! -name "*$main*")
 dtBar="./"
-N_comp=$(find . -name "*.vhd" -and ! -name "*$main*" | wc -l)
+N_comp=$(find . -name "Eq01*.vhd" -and ! -name "*$main*" | wc -l)
 
 count=0
 while [ $count -lt $N_comp ]
@@ -37,9 +37,10 @@ fi
 ghdl -a Eq01-"$main".vhd Eq01-"$main"_tb.vhd
 ghdl -e "$main"_tb
 ghdl -r "$main"_tb --stop-time="$time"ns --wave=Eq01-"$main".ghw
-find . -type f ! -name '*.vhd' -and ! -name '*.sh' -and ! -name '*.ghw' -and ! -name '*.zip' -and ! -name '*.gtkw' -delete
-N_GTKW=$(find . -name "*.gtkw" | wc -l)
+N_GTKW=$(find . -name "Eq01*.gtkw" | wc -l)
 echo "SEE $N_GTKW"
+ghdl --clean
+ghdl --remove
 if (( $N_GTKW > 0 )); then
 	gtkwave Eq01-"$main".gtkw
 else

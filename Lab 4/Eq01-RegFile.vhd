@@ -31,12 +31,13 @@ port( 	clk:		in std_logic;
 end component;
 
 --output from register
-signal o1, o2, o3, o4, o5, o6, o7:	unsigned(15 downto 0):=x"0000";
+signal o0, o1, o2, o3, o4, o5, o6, o7:	unsigned(15 downto 0):=x"0000";
 --write enable register
 signal wr:				std_logic_vector(7 downto 0);
 
 begin
 
+rg0:	reg16bits port map(clk, rst, wr(0), WD3, o0);
 rg1:	reg16bits port map(clk, rst, wr(1), WD3, o1);
 rg2:	reg16bits port map(clk, rst, wr(2), WD3, o2);
 rg3:	reg16bits port map(clk, rst, wr(3), WD3, o3);
@@ -45,7 +46,8 @@ rg5:	reg16bits port map(clk, rst, wr(5), WD3, o5);
 rg6:	reg16bits port map(clk, rst, wr(6), WD3, o6);
 rg7:	reg16bits port map(clk, rst, wr(7), WD3, o7);
 	
-wr <= 	x"02" when A3="001" and wr_en='1' else
+wr <= 	x"01" when A3="000" and wr_en='1' else
+	x"02" when A3="001" and wr_en='1' else
 	x"04" when A3="010" and wr_en='1' else
 	x"08" when A3="011" and wr_en='1' else
 	x"10" when A3="100" and wr_en='1' else
@@ -54,7 +56,8 @@ wr <= 	x"02" when A3="001" and wr_en='1' else
 	x"80" when A3="111" and wr_en='1' else
 	x"00";
 
-RD1 <= 	o1 when A1="001" else
+RD1 <= 	o0 when A1="000" else
+	o1 when A1="001" else
 	o2 when A1="010" else
 	o3 when A1="011" else
 	o4 when A1="100" else
@@ -63,7 +66,8 @@ RD1 <= 	o1 when A1="001" else
 	o7 when A1="111" else
 	x"0000";
 
-RD2 <= 	o1 when A2="001" else
+RD2 <= 	o0 when A2="000" else
+	o1 when A2="001" else
 	o2 when A2="010" else
 	o3 when A2="011" else
 	o4 when A2="100" else
