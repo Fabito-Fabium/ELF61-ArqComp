@@ -32,22 +32,37 @@ signal 	Cext:			unsigned (15 downto 0)		:=x"0000";
 begin
 	tB:	ULARegs port map(clk, rst, wr_en, RoExt, A1, A2, A3, op, Cext);
 	process begin
-		--reset explicito
-		rst 	<= '0'; 	wait for 50 ns;
-		rst	<= '1';		wait for 50 ns;
-		rst	<= '0';		wait for 50 ns;
+		rst <= '1'; wait for 200 ns;
+		rst <= '0'; wait;
+	end process;
+	
+	process begin
+		clk <= '0'; wait for 50 ns;
+		clk <= '1'; wait for 50 ns;
+	end process;
+	
+	process begin
+		wait for 200 ns;
+		RoExt	<= '1'; 
+		A3 	<= "110"; 	wait for 25 ns;
+		Cext 	<= to_unsigned(16#008263#, Cext'length);
+		wr_en 	<= '1'; 	wait for 75 ns;
+		wr_en 	<= '0';
 		
-		RoExt 	<='1';		wait for 50 ns;
-		Cext 	<=x"1234";	wait for 50 ns;
-		op	<="000";	wait for 50 ns;
-		A3	<="000";	wait for 50 ns;
-		wr_en	<= '1';		wait for 50 ns;
-		clk 	<= '1'; 	wait for 50 ns;
-		clk 	<= '0';		wait for 50 ns;
-		wr_en	<= '0';		wait for 50 ns;
+		A3 	<= "111"; 	wait for 25 ns;
+		Cext 	<= to_unsigned(16#008345#, Cext'length);
+		wr_en 	<= '1'; 	wait for 75 ns;
+		wr_en 	<= '0';
 		
-		RoExt	<='0';		wait for 50 ns;
-		A2 	<="001";	wait for 50 ns;
+		A3	<= "110";
+		A1	<= "111";	wait for 25 ns;
+		A2	<= "110";
+		op	<= "010";
+		wr_en	<= '1';		wait for 75 ns;
+		wr_en	<= '0';
+		
+		A1	<= "110";
+		A2	<= "000";	wait for 25 ns;
 		
 		wait;
 	

@@ -27,7 +27,7 @@ port( 	clk, rst, wr_en:	in std_logic;
 end component;
 
 signal clk, rst, wr_en: std_logic		:='0';
-signal A1, A2, A3:	unsigned(2 downto 0)	:= "000";
+signal A1, A2, A3:	unsigned(2 downto 0)	:="000";
 signal WD3:		unsigned(15 downto 0)	:=x"0000";
 signal RD1, RD2:	unsigned(15 downto 0);
 --RA: 2358263 => 8263
@@ -43,7 +43,8 @@ begin
 	end process;
 
 	process begin
-		rst <='1'; 	wait for 200 ns;
+		wait for 10 ns;
+		rst <='1'; 	wait for 190 ns;
 		rst <='0';	wait;
 	end process;
 	
