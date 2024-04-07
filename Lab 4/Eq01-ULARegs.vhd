@@ -13,7 +13,7 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 entity ULARegs is
-port( 	clk, rst, wr_en, RoExt:	in std_logic;
+port( 	clk, rst, wr_en, IorR:	in std_logic;
 	A1, A2, A3:		in unsigned (2 downto 0);
 	op:			in std_logic_vector (2 downto 0);
 	Cext:			in unsigned (15 downto 0)
@@ -48,8 +48,8 @@ begin
 	Bank:	RegFile port map(clk, rst, wr_en, A1, A2, A3, out_ULA, RD1, RD2);
 	ULA0:	ULA	port map(RD1, in_B, op, out_ULA, zero, LT);
 --mux:
-	in_B <= RD2 	when RoExt='0' else
-		Cext 	when RoExt='1' else
+	in_B <= RD2 	when IorR='1' else
+		Cext 	when IorR='0' else
 		x"0000";
 	
 end architecture;

@@ -1,16 +1,16 @@
 v 3
-file . "Eq01-ULARegs.vhd" "20240407164952.000" "20240407140906.319":
-  entity ularegs at 11( 348) + 0 on 85;
-  architecture op_ularegs of ularegs at 23( 626) + 0 on 86;
-file . "Eq01-reg16bits.vhd" "20240407164952.000" "20240407140906.256":
-  entity reg16bits at 10( 346) + 0 on 79;
-  architecture a_reg8bits of reg16bits at 22( 608) + 0 on 80;
-file . "Eq01-RegFile.vhd" "20240407164952.000" "20240407140906.277":
-  entity regfile at 11( 348) + 0 on 81;
-  architecture op_regfile of regfile at 22( 624) + 0 on 82;
-file . "Eq01-ULARegs_tb.vhd" "20240407165742.000" "20240407140906.339":
-  entity ularegs_tb at 11( 348) + 0 on 87;
-  architecture testbench of ularegs_tb at 18( 459) + 0 on 88;
-file . "Eq01-ULA.vhd" "20240407170032.000" "20240407140906.298":
-  entity ula at 12( 517) + 0 on 83;
-  architecture ula_arch of ula at 28( 877) + 0 on 84;
+file . "Eq01-ULARegs.vhd" "20240407172704.000" "20240407143241.178":
+  entity ularegs at 11( 348) + 0 on 145;
+  architecture op_ularegs of ularegs at 23( 625) + 0 on 146;
+file . "Eq01-reg16bits.vhd" "20240407164952.000" "20240407143241.114":
+  entity reg16bits at 10( 346) + 0 on 139;
+  architecture a_reg8bits of reg16bits at 22( 608) + 0 on 140;
+file . "Eq01-RegFile.vhd" "20240407164952.000" "20240407143241.137":
+  entity regfile at 11( 348) + 0 on 141;
+  architecture op_regfile of regfile at 22( 624) + 0 on 142;
+file . "Eq01-ULARegs_tb.vhd" "20240407173232.000" "20240407143241.197":
+  entity ularegs_tb at 11( 348) + 0 on 147;
+  architecture testbench of ularegs_tb at 18( 459) + 0 on 148;
+file . "Eq01-ULA.vhd" "20240407170032.000" "20240407143241.157":
+  entity ula at 12( 517) + 0 on 143;
+  architecture ula_arch of ula at 28( 877) + 0 on 144;
