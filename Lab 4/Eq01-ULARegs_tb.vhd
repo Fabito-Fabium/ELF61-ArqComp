@@ -55,8 +55,8 @@ begin
 		
 		A3	<= "110";
 		IorR <= '1';
-		A1	<= "111";	wait for 25 ns;
-		A2	<= "110";
+		A1	<= "111";	
+		A2	<= "110";	wait for 125 ns;
 		op	<= "010";
 		wr_en	<= '1';		wait for 75 ns;
 		wr_en	<= '0';

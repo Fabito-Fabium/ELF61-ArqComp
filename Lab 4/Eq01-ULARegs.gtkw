@@ -1,15 +1,15 @@
 [*]
 [*] GTKWave Analyzer v3.3.118 (w)1999-2023 BSI
-[*] Sun Apr  7 17:58:49 2024
+[*] Sun Apr  7 18:09:06 2024
 [*]
 [dumpfile] "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 4/Eq01-ULARegs.ghw"
-[dumpfile_mtime] "Sun Apr  7 17:56:16 2024"
-[dumpfile_size] 3740
+[dumpfile_mtime] "Sun Apr  7 18:08:19 2024"
+[dumpfile_size] 3767
 [savefile] "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 4/Eq01-ULARegs.gtkw"
-[timestart] 0
-[size] 1920 712
+[timestart] 135000000
+[size] 1920 965
 [pos] -1 -1
-*-26.383474 14800000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-26.383474 460900000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] top.
 [treeopen] top.ularegs_tb.
 [treeopen] top.ularegs_tb.tb.
@@ -20,17 +20,16 @@
 [sst_width] 273
 [signals_width] 134
 [sst_expanded] 1
-[sst_vpaned_height] 193
+[sst_vpaned_height] 281
 @28
 top.ularegs_tb.rst
 top.ularegs_tb.clk
 top.ularegs_tb.wr_en
 #{top.ularegs_tb.a3[2:0]} top.ularegs_tb.a3[2] top.ularegs_tb.a3[1] top.ularegs_tb.a3[0]
-@22
+@23
 #{top.ularegs_tb.tb.ula0.out_ula[15:0]} top.ularegs_tb.tb.ula0.out_ula[15] top.ularegs_tb.tb.ula0.out_ula[14] top.ularegs_tb.tb.ula0.out_ula[13] top.ularegs_tb.tb.ula0.out_ula[12] top.ularegs_tb.tb.ula0.out_ula[11] top.ularegs_tb.tb.ula0.out_ula[10] top.ularegs_tb.tb.ula0.out_ula[9] top.ularegs_tb.tb.ula0.out_ula[8] top.ularegs_tb.tb.ula0.out_ula[7] top.ularegs_tb.tb.ula0.out_ula[6] top.ularegs_tb.tb.ula0.out_ula[5] top.ularegs_tb.tb.ula0.out_ula[4] top.ularegs_tb.tb.ula0.out_ula[3] top.ularegs_tb.tb.ula0.out_ula[2] top.ularegs_tb.tb.ula0.out_ula[1] top.ularegs_tb.tb.ula0.out_ula[0]
-@29
-top.ularegs_tb.tb.zero
 @28
+top.ularegs_tb.tb.zero
 top.ularegs_tb.tb.lt
 +{IorR} top.ularegs_tb.tb.iorr
 @22
