@@ -33,8 +33,8 @@ begin
 	tb: 	ROM_PC_UC port map(clk, rst);
 	
 	process begin
-		clk <='0'; 	wait for 50 ns;
 		clk <='1'; 	wait for 50 ns;
+		clk <='0'; 	wait for 50 ns;
 	end process;
 	process begin
 		rst <= '1'; wait for 200 ns;
