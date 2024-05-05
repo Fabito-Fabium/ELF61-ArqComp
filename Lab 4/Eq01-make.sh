@@ -35,7 +35,6 @@ if (( $N_comp > 0 )); then
 fi
 
 ghdl -a Eq01-"$main".vhd Eq01-"$main"_tb.vhd
-ghdl -e "$main"_tb
 ghdl -r "$main"_tb --stop-time="$time"ns --wave=Eq01-"$main".ghw
 N_GTKW=$(find . -name "Eq01*.gtkw" | wc -l)
 ghdl --clean
