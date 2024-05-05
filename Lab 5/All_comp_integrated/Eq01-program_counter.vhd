@@ -38,8 +38,10 @@ begin
 
 count: reg16bits port map(clk, rst, wr_en, dt_in, dt_out);
 dt_in <=	data_in when jump = '1' else 
+		x"0000"	when rst = '1' else
 		dt_out + x"0001";
 data_out <= dt_out;
+
 
 end architecture;
 

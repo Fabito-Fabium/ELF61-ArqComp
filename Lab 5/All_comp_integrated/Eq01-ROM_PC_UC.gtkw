@@ -1,15 +1,15 @@
 [*]
 [*] GTKWave Analyzer v3.3.118 (w)1999-2023 BSI
-[*] Sun May  5 16:08:13 2024
+[*] Sun May  5 19:29:25 2024
 [*]
 [dumpfile] "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/All_comp_integrated/Eq01-ROM_PC_UC.ghw"
-[dumpfile_mtime] "Sun May  5 16:07:52 2024"
-[dumpfile_size] 2027
+[dumpfile_mtime] "Sun May  5 19:27:06 2024"
+[dumpfile_size] 2019
 [savefile] "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/All_comp_integrated/Eq01-ROM_PC_UC.gtkw"
 [timestart] 0
 [size] 1920 712
 [pos] -1 -1
-*-28.597717 836000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-28.597717 773000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] top.
 [treeopen] top.rom_pc_uc_tb.
 [treeopen] top.rom_pc_uc_tb.tb.
@@ -22,7 +22,7 @@
 @28
 +{Clock} top.rom_pc_uc_tb.clk
 +{Reset} top.rom_pc_uc_tb.rst
-@25
+@23
 +{PC output} #{top.rom_pc_uc_tb.tb.pc.data_out[15:0]} top.rom_pc_uc_tb.tb.pc.data_out[15] top.rom_pc_uc_tb.tb.pc.data_out[14] top.rom_pc_uc_tb.tb.pc.data_out[13] top.rom_pc_uc_tb.tb.pc.data_out[12] top.rom_pc_uc_tb.tb.pc.data_out[11] top.rom_pc_uc_tb.tb.pc.data_out[10] top.rom_pc_uc_tb.tb.pc.data_out[9] top.rom_pc_uc_tb.tb.pc.data_out[8] top.rom_pc_uc_tb.tb.pc.data_out[7] top.rom_pc_uc_tb.tb.pc.data_out[6] top.rom_pc_uc_tb.tb.pc.data_out[5] top.rom_pc_uc_tb.tb.pc.data_out[4] top.rom_pc_uc_tb.tb.pc.data_out[3] top.rom_pc_uc_tb.tb.pc.data_out[2] top.rom_pc_uc_tb.tb.pc.data_out[1] top.rom_pc_uc_tb.tb.pc.data_out[0]
 @28
 +{Fetch/Decode} top.rom_pc_uc_tb.tb.fede.fetchdec
@@ -31,7 +31,5 @@
 #{top.rom_pc_uc_tb.tb.uctl.opcode[1:0]} top.rom_pc_uc_tb.tb.uctl.opcode[1] top.rom_pc_uc_tb.tb.uctl.opcode[0]
 @22
 #{top.rom_pc_uc_tb.tb.addrs[15:0]} top.rom_pc_uc_tb.tb.addrs[15] top.rom_pc_uc_tb.tb.addrs[14] top.rom_pc_uc_tb.tb.addrs[13] top.rom_pc_uc_tb.tb.addrs[12] top.rom_pc_uc_tb.tb.addrs[11] top.rom_pc_uc_tb.tb.addrs[10] top.rom_pc_uc_tb.tb.addrs[9] top.rom_pc_uc_tb.tb.addrs[8] top.rom_pc_uc_tb.tb.addrs[7] top.rom_pc_uc_tb.tb.addrs[6] top.rom_pc_uc_tb.tb.addrs[5] top.rom_pc_uc_tb.tb.addrs[4] top.rom_pc_uc_tb.tb.addrs[3] top.rom_pc_uc_tb.tb.addrs[2] top.rom_pc_uc_tb.tb.addrs[1] top.rom_pc_uc_tb.tb.addrs[0]
-@28
-+{Write Enable} top.rom_pc_uc_tb.tb.pc.wr_en
 [pattern_trace] 1
 [pattern_trace] 0
