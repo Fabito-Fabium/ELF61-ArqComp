@@ -15,6 +15,8 @@ entity program_counter is
 port( 	clk:		in std_logic;
 	rst:		in std_logic;
 	wr_en:		in std_logic;
+	jump:		in std_logic;
+	data_in:	in unsigned(15 downto 0);
 	data_out:	out unsigned(15 downto 0)
 	);
 end entity;
@@ -35,7 +37,8 @@ end component;
 begin
 
 count: reg16bits port map(clk, rst, wr_en, dt_in, dt_out);
-dt_in <= dt_out + x"0001";
+dt_in <=	data_in + x"0001" when jump = '1' else 
+		dt_out + x"0001";
 data_out <= dt_out;
 
 end architecture;

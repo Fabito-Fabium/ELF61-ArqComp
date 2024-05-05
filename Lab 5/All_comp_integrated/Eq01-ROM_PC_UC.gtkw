@@ -1,0 +1,33 @@
+[*]
+[*] GTKWave Analyzer v3.3.118 (w)1999-2023 BSI
+[*] Sun May  5 15:18:42 2024
+[*]
+[dumpfile] "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/All_comp_integrated/Eq01-ROM_PC_UC.ghw"
+[dumpfile_mtime] "Sun May  5 15:10:48 2024"
+[dumpfile_size] 2021
+[savefile] "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/All_comp_integrated/Eq01-ROM_PC_UC.gtkw"
+[timestart] 0
+[size] 1920 965
+[pos] -27 -24
+*-28.597717 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.rom_pc_uc_tb.
+[treeopen] top.rom_pc_uc_tb.tb.
+[treeopen] top.rom_pc_uc_tb.tb.r0m.
+[sst_width] 273
+[signals_width] 142
+[sst_expanded] 1
+[sst_vpaned_height] 284
+@28
++{Clock} top.rom_pc_uc_tb.clk
++{Reset} top.rom_pc_uc_tb.rst
+@22
++{PC output} #{top.rom_pc_uc_tb.tb.pc.data_out[15:0]} top.rom_pc_uc_tb.tb.pc.data_out[15] top.rom_pc_uc_tb.tb.pc.data_out[14] top.rom_pc_uc_tb.tb.pc.data_out[13] top.rom_pc_uc_tb.tb.pc.data_out[12] top.rom_pc_uc_tb.tb.pc.data_out[11] top.rom_pc_uc_tb.tb.pc.data_out[10] top.rom_pc_uc_tb.tb.pc.data_out[9] top.rom_pc_uc_tb.tb.pc.data_out[8] top.rom_pc_uc_tb.tb.pc.data_out[7] top.rom_pc_uc_tb.tb.pc.data_out[6] top.rom_pc_uc_tb.tb.pc.data_out[5] top.rom_pc_uc_tb.tb.pc.data_out[4] top.rom_pc_uc_tb.tb.pc.data_out[3] top.rom_pc_uc_tb.tb.pc.data_out[2] top.rom_pc_uc_tb.tb.pc.data_out[1] top.rom_pc_uc_tb.tb.pc.data_out[0]
+@28
++{Fetch/Decode} top.rom_pc_uc_tb.tb.fede.fetchdec
++{instruction} #{top.rom_pc_uc_tb.tb.r0m.dado[7:0]} top.rom_pc_uc_tb.tb.r0m.dado[7] top.rom_pc_uc_tb.tb.r0m.dado[6] top.rom_pc_uc_tb.tb.r0m.dado[5] top.rom_pc_uc_tb.tb.r0m.dado[4] top.rom_pc_uc_tb.tb.r0m.dado[3] top.rom_pc_uc_tb.tb.r0m.dado[2] top.rom_pc_uc_tb.tb.r0m.dado[1] top.rom_pc_uc_tb.tb.r0m.dado[0]
++{Jump Enable} top.rom_pc_uc_tb.tb.pc.jump
+#{top.rom_pc_uc_tb.tb.uctl.opcode[1:0]} top.rom_pc_uc_tb.tb.uctl.opcode[1] top.rom_pc_uc_tb.tb.uctl.opcode[0]
++{Write Enable} top.rom_pc_uc_tb.tb.pc.wr_en
+[pattern_trace] 1
+[pattern_trace] 0
