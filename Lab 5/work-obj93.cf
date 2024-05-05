@@ -1,7 +1,0 @@
-v 4
-file . "Eq01-program_counter.vhd" "83a4cb53f99012446e1c657c33957356ccd7aaba" "20240505113801.845":
-  entity program_counter at 10( 337) + 0 on 13;
-  architecture counting of program_counter at 22( 558) + 0 on 14;
-file . "Eq01_conteudo_rom.vhd" "5f283b022d1d5c19d7ffcb1deed2c67bf8cc7ba4" "20240505112615.998":
-  entity rom at 1( 0) + 0 on 11;
-  architecture a_rom of rom at 12( 197) + 0 on 12;

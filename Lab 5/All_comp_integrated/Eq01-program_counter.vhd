@@ -11,32 +11,32 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity TFF is
+entity program_counter is
+port( 	clk:		in std_logic;
+	rst:		in std_logic;
+	wr_en:		in std_logic;
+	data_out:	out unsigned(15 downto 0)
+	);
+end entity;
+
+architecture counting of program_counter is
+
+signal dt_in, dt_out:	unsigned(15 downto 0):=x"0000";
+
+component reg16bits is
 port( 	clk:		in std_logic;
 	rst:		in std_logic;
 	wr_en:		in std_logic;
 	data_in:	in unsigned(15 downto 0);
 	data_out:	out unsigned(15 downto 0)
 	);
-end entity;
-architecture flipping of TFF is
-
-signal rgst:	unsigned(15 downto 0);
+end component;
 
 begin
 
-process(clk, rst, wr_en)
-begin
-	if rst='1' then
-		rgst <= x"0000";
-	elsif wr_en='1' then
-		if rising_edge(clk) then
-			rgst <= data_in;
-		end if;
-	end if;
-end process;
-
-data_out <= rgst;
+count: reg16bits port map(clk, rst, wr_en, dt_in, dt_out);
+dt_in <= dt_out + x"0001";
+data_out <= dt_out;
 
 end architecture;
 

@@ -21,7 +21,7 @@ end entity;
 
 architecture counting of program_counter is
 
-signal dt_interm:	unsigned(15 downto 0):=x"0000";
+signal dt_in, dt_out:	unsigned(15 downto 0):=x"0000";
 
 component reg16bits is
 port( 	clk:		in std_logic;
@@ -34,8 +34,9 @@ end component;
 
 begin
 
-count: reg16bits port map(clk, rst, wr_en, dt_interm, dt_interm);
-data_out <= do_inter;
+count: reg16bits port map(clk, rst, wr_en, dt_in, dt_out);
+dt_in <= dt_out + x"0001";
+data_out <= dt_out;
 
 end architecture;
 
