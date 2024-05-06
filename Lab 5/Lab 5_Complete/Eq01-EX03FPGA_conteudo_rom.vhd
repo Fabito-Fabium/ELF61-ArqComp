@@ -1,0 +1,41 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity rom is
+port( clk : in std_logic;
+	endereco : in unsigned(15 downto 0);
+	dado : out unsigned(7 downto 0)
+);
+end entity;
+
+architecture a_rom of rom is
+	type mem is array (0 to 127) of unsigned(7 downto 0);
+constant conteudo_rom : mem := (
+-- caso endereco => conteudo (apenas exemplo. Altere para refletir o
+-- programa solicitado)
+	0  => "00000000",  1  => "00000000",  2 => "00000000",
+	3  => "00000000",  4  => "11010000",  5 => "00000000",
+	6  => "00000000",  7  => "00000000",  8 => "00000000",
+	9  => "00000000",  10 => "00000000", 11 => "00000000",
+	12 => "00000000",  13 => "00000000", 14 => "00000000",
+	15 => "00000000",  16 => "00000000", 17 => "11010011",
+	18 => "00000000",  19 => "00000000", 20 => "00000000",
+	21 => "11011110",  22 => "00000000", 23 => "00000000",
+	24 => "00000000",  25 => "00000000", 26 => "00000000",
+	27 => "00000000",  28 => "00000000", 29 => "00000000",
+	30 => "00000000",  31 => "00000000", 32 => "11000000",
+	
+ -- abaixo: casos omissos => (zero em todos os bits a decodificação do pc
+ --é parcial dos 7 least significant bits)
+	others => (others=>'0')
+);
+
+begin
+	process(clk)
+	begin
+		if(rising_edge(clk)) then
+			dado <= conteudo_rom(to_integer(endereco));
+		end if;
+	end process;
+end architecture;
