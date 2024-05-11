@@ -1,15 +1,15 @@
 [*]
 [*] GTKWave Analyzer v3.3.118 (w)1999-2023 BSI
-[*] Sun May  5 19:29:25 2024
+[*] Mon May  6 14:55:46 2024
 [*]
 [dumpfile] "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/All_comp_integrated/Eq01-ROM_PC_UC.ghw"
-[dumpfile_mtime] "Sun May  5 19:27:06 2024"
-[dumpfile_size] 2019
+[dumpfile_mtime] "Mon May  6 14:55:33 2024"
+[dumpfile_size] 2657
 [savefile] "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/All_comp_integrated/Eq01-ROM_PC_UC.gtkw"
 [timestart] 0
 [size] 1920 712
 [pos] -1 -1
-*-28.597717 773000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-29.334682 773000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] top.
 [treeopen] top.rom_pc_uc_tb.
 [treeopen] top.rom_pc_uc_tb.tb.
