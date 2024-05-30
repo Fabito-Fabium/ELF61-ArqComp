@@ -1,0 +1,32 @@
+[*]
+[*] GTKWave Analyzer v3.3.118 (w)1999-2023 BSI
+[*] Thu May 30 17:07:01 2024
+[*]
+[dumpfile] "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ROM_PC_UC/Eq01-ROM_PC_UC.ghw"
+[dumpfile_mtime] "Thu May 30 17:02:32 2024"
+[dumpfile_size] 2084
+[savefile] "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ROM_PC_UC/Eq01-ROM_PC_UC.gtkw"
+[timestart] 0
+[size] 1894 960
+[pos] -975 -1
+*-28.809891 773000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.rom_pc_uc_tb.
+[treeopen] top.rom_pc_uc_tb.tb.
+[treeopen] top.rom_pc_uc_tb.tb.pc.
+[treeopen] top.rom_pc_uc_tb.tb.r0m.
+[sst_width] 273
+[signals_width] 318
+[sst_expanded] 1
+[sst_vpaned_height] 196
+@28
++{Clock} top.rom_pc_uc_tb.clk
++{Reset} top.rom_pc_uc_tb.rst
++{Jump Enable} top.rom_pc_uc_tb.tb.pc.jump
+#{top.rom_pc_uc_tb.tb.uctl.opcode[1:0]} top.rom_pc_uc_tb.tb.uctl.opcode[1] top.rom_pc_uc_tb.tb.uctl.opcode[0]
+@22
+#{top.rom_pc_uc_tb.tb.r0m.instr[15:0]} top.rom_pc_uc_tb.tb.r0m.instr[15] top.rom_pc_uc_tb.tb.r0m.instr[14] top.rom_pc_uc_tb.tb.r0m.instr[13] top.rom_pc_uc_tb.tb.r0m.instr[12] top.rom_pc_uc_tb.tb.r0m.instr[11] top.rom_pc_uc_tb.tb.r0m.instr[10] top.rom_pc_uc_tb.tb.r0m.instr[9] top.rom_pc_uc_tb.tb.r0m.instr[8] top.rom_pc_uc_tb.tb.r0m.instr[7] top.rom_pc_uc_tb.tb.r0m.instr[6] top.rom_pc_uc_tb.tb.r0m.instr[5] top.rom_pc_uc_tb.tb.r0m.instr[4] top.rom_pc_uc_tb.tb.r0m.instr[3] top.rom_pc_uc_tb.tb.r0m.instr[2] top.rom_pc_uc_tb.tb.r0m.instr[1] top.rom_pc_uc_tb.tb.r0m.instr[0]
+@23
+#{top.rom_pc_uc_tb.tb.pc_out[15:0]} top.rom_pc_uc_tb.tb.pc_out[15] top.rom_pc_uc_tb.tb.pc_out[14] top.rom_pc_uc_tb.tb.pc_out[13] top.rom_pc_uc_tb.tb.pc_out[12] top.rom_pc_uc_tb.tb.pc_out[11] top.rom_pc_uc_tb.tb.pc_out[10] top.rom_pc_uc_tb.tb.pc_out[9] top.rom_pc_uc_tb.tb.pc_out[8] top.rom_pc_uc_tb.tb.pc_out[7] top.rom_pc_uc_tb.tb.pc_out[6] top.rom_pc_uc_tb.tb.pc_out[5] top.rom_pc_uc_tb.tb.pc_out[4] top.rom_pc_uc_tb.tb.pc_out[3] top.rom_pc_uc_tb.tb.pc_out[2] top.rom_pc_uc_tb.tb.pc_out[1] top.rom_pc_uc_tb.tb.pc_out[0]
+[pattern_trace] 1
+[pattern_trace] 0

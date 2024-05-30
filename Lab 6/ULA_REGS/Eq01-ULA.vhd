@@ -18,7 +18,7 @@ entity ULA is
 --input signal
 		in_A: 		in unsigned (15 downto 0);
 		in_B: 		in unsigned (15 downto 0);
-		op: 			in std_logic_vector (2 downto 0);
+		op: 			in std_logic_vector (5 downto 0);
 --output signal		
 		out_ULA: 	out unsigned (15 downto 0);
 		zero: 		out std_logic;
@@ -32,15 +32,10 @@ signal inter_out: 		unsigned(15 downto 0);
 begin
 
 	inter_out <=   	
-      in_A + in_B 				        when op="000" else
-			in_A - in_B 				        when op="001" else
-			in_A / in_B  				        when op="010" and (in_B /= x"0000") else
-			resize(in_A * in_B, 16)			when op="011" else
-			in_A and in_B 				      when op="100" else
-			in_A or in_B 				        when op="101" else
-			not in_A 				            when op="110" else
-			not in_B 				            when op="111" else
-      "0000000000000000";
+      in_A + in_B 				when op="001110" else
+			in_A - in_B 				when op="001101" else
+			in_A / in_B  				when op="000010" and (in_B /= x"0000") else
+			"0000000000000000";
 	out_ULA		<= inter_out;
 			
 	LT 	<= 	'1' when std_logic_vector(in_A) < std_logic_vector(in_B) else 

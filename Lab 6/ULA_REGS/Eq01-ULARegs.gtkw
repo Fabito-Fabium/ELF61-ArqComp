@@ -1,0 +1,49 @@
+[*]
+[*] GTKWave Analyzer v3.3.118 (w)1999-2023 BSI
+[*] Sun Apr  7 18:09:06 2024
+[*]
+[dumpfile] "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 4/Eq01-ULARegs.ghw"
+[dumpfile_mtime] "Sun Apr  7 18:08:19 2024"
+[dumpfile_size] 3767
+[savefile] "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 4/Eq01-ULARegs.gtkw"
+[timestart] 135000000
+[size] 1920 965
+[pos] -1 -1
+*-26.383474 460900000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.ularegs_tb.
+[treeopen] top.ularegs_tb.tb.
+[treeopen] top.ularegs_tb.tb.bank.
+[treeopen] top.ularegs_tb.tb.bank.rg6.
+[treeopen] top.ularegs_tb.tb.bank.rg7.
+[treeopen] top.ularegs_tb.tb.ula0.
+[sst_width] 273
+[signals_width] 134
+[sst_expanded] 1
+[sst_vpaned_height] 281
+@28
+top.ularegs_tb.rst
+top.ularegs_tb.clk
+top.ularegs_tb.wr_en
+#{top.ularegs_tb.a3[2:0]} top.ularegs_tb.a3[2] top.ularegs_tb.a3[1] top.ularegs_tb.a3[0]
+@23
+#{top.ularegs_tb.tb.ula0.out_ula[15:0]} top.ularegs_tb.tb.ula0.out_ula[15] top.ularegs_tb.tb.ula0.out_ula[14] top.ularegs_tb.tb.ula0.out_ula[13] top.ularegs_tb.tb.ula0.out_ula[12] top.ularegs_tb.tb.ula0.out_ula[11] top.ularegs_tb.tb.ula0.out_ula[10] top.ularegs_tb.tb.ula0.out_ula[9] top.ularegs_tb.tb.ula0.out_ula[8] top.ularegs_tb.tb.ula0.out_ula[7] top.ularegs_tb.tb.ula0.out_ula[6] top.ularegs_tb.tb.ula0.out_ula[5] top.ularegs_tb.tb.ula0.out_ula[4] top.ularegs_tb.tb.ula0.out_ula[3] top.ularegs_tb.tb.ula0.out_ula[2] top.ularegs_tb.tb.ula0.out_ula[1] top.ularegs_tb.tb.ula0.out_ula[0]
+@28
+top.ularegs_tb.tb.zero
+top.ularegs_tb.tb.lt
++{IorR} top.ularegs_tb.tb.iorr
+@22
+#{top.ularegs_tb.cext[15:0]} top.ularegs_tb.cext[15] top.ularegs_tb.cext[14] top.ularegs_tb.cext[13] top.ularegs_tb.cext[12] top.ularegs_tb.cext[11] top.ularegs_tb.cext[10] top.ularegs_tb.cext[9] top.ularegs_tb.cext[8] top.ularegs_tb.cext[7] top.ularegs_tb.cext[6] top.ularegs_tb.cext[5] top.ularegs_tb.cext[4] top.ularegs_tb.cext[3] top.ularegs_tb.cext[2] top.ularegs_tb.cext[1] top.ularegs_tb.cext[0]
+@28
+#{top.ularegs_tb.op[2:0]} top.ularegs_tb.op[2] top.ularegs_tb.op[1] top.ularegs_tb.op[0]
+#{top.ularegs_tb.a1[2:0]} top.ularegs_tb.a1[2] top.ularegs_tb.a1[1] top.ularegs_tb.a1[0]
+@22
+#{top.ularegs_tb.tb.rd1[15:0]} top.ularegs_tb.tb.rd1[15] top.ularegs_tb.tb.rd1[14] top.ularegs_tb.tb.rd1[13] top.ularegs_tb.tb.rd1[12] top.ularegs_tb.tb.rd1[11] top.ularegs_tb.tb.rd1[10] top.ularegs_tb.tb.rd1[9] top.ularegs_tb.tb.rd1[8] top.ularegs_tb.tb.rd1[7] top.ularegs_tb.tb.rd1[6] top.ularegs_tb.tb.rd1[5] top.ularegs_tb.tb.rd1[4] top.ularegs_tb.tb.rd1[3] top.ularegs_tb.tb.rd1[2] top.ularegs_tb.tb.rd1[1] top.ularegs_tb.tb.rd1[0]
+@28
+#{top.ularegs_tb.a2[2:0]} top.ularegs_tb.a2[2] top.ularegs_tb.a2[1] top.ularegs_tb.a2[0]
+@22
+#{top.ularegs_tb.tb.rd2[15:0]} top.ularegs_tb.tb.rd2[15] top.ularegs_tb.tb.rd2[14] top.ularegs_tb.tb.rd2[13] top.ularegs_tb.tb.rd2[12] top.ularegs_tb.tb.rd2[11] top.ularegs_tb.tb.rd2[10] top.ularegs_tb.tb.rd2[9] top.ularegs_tb.tb.rd2[8] top.ularegs_tb.tb.rd2[7] top.ularegs_tb.tb.rd2[6] top.ularegs_tb.tb.rd2[5] top.ularegs_tb.tb.rd2[4] top.ularegs_tb.tb.rd2[3] top.ularegs_tb.tb.rd2[2] top.ularegs_tb.tb.rd2[1] top.ularegs_tb.tb.rd2[0]
++{Reg6:} #{top.ularegs_tb.tb.bank.rg6.rgst[15:0]} top.ularegs_tb.tb.bank.rg6.rgst[15] top.ularegs_tb.tb.bank.rg6.rgst[14] top.ularegs_tb.tb.bank.rg6.rgst[13] top.ularegs_tb.tb.bank.rg6.rgst[12] top.ularegs_tb.tb.bank.rg6.rgst[11] top.ularegs_tb.tb.bank.rg6.rgst[10] top.ularegs_tb.tb.bank.rg6.rgst[9] top.ularegs_tb.tb.bank.rg6.rgst[8] top.ularegs_tb.tb.bank.rg6.rgst[7] top.ularegs_tb.tb.bank.rg6.rgst[6] top.ularegs_tb.tb.bank.rg6.rgst[5] top.ularegs_tb.tb.bank.rg6.rgst[4] top.ularegs_tb.tb.bank.rg6.rgst[3] top.ularegs_tb.tb.bank.rg6.rgst[2] top.ularegs_tb.tb.bank.rg6.rgst[1] top.ularegs_tb.tb.bank.rg6.rgst[0]
++{Reg7:} #{top.ularegs_tb.tb.bank.rg7.rgst[15:0]} top.ularegs_tb.tb.bank.rg7.rgst[15] top.ularegs_tb.tb.bank.rg7.rgst[14] top.ularegs_tb.tb.bank.rg7.rgst[13] top.ularegs_tb.tb.bank.rg7.rgst[12] top.ularegs_tb.tb.bank.rg7.rgst[11] top.ularegs_tb.tb.bank.rg7.rgst[10] top.ularegs_tb.tb.bank.rg7.rgst[9] top.ularegs_tb.tb.bank.rg7.rgst[8] top.ularegs_tb.tb.bank.rg7.rgst[7] top.ularegs_tb.tb.bank.rg7.rgst[6] top.ularegs_tb.tb.bank.rg7.rgst[5] top.ularegs_tb.tb.bank.rg7.rgst[4] top.ularegs_tb.tb.bank.rg7.rgst[3] top.ularegs_tb.tb.bank.rg7.rgst[2] top.ularegs_tb.tb.bank.rg7.rgst[1] top.ularegs_tb.tb.bank.rg7.rgst[0]
+[pattern_trace] 1
+[pattern_trace] 0
