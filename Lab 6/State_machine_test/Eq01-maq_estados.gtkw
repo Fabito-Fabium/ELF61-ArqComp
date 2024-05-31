@@ -1,0 +1,23 @@
+[*]
+[*] GTKWave Analyzer v3.3.118 (w)1999-2023 BSI
+[*] Thu May 30 23:23:55 2024
+[*]
+[dumpfile] "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/State_machine_test/Eq01-maq_estados.ghw"
+[dumpfile_mtime] "Thu May 30 23:23:21 2024"
+[dumpfile_size] 1046
+[savefile] "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/State_machine_test/Eq01-maq_estados.gtkw"
+[timestart] 0
+[size] 1894 960
+[pos] -975 -1
+*-28.085381 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.maq_estados_tb.
+[sst_width] 273
+[signals_width] 134
+[sst_expanded] 1
+[sst_vpaned_height] 157
+@28
+top.maq_estados_tb.clk
+#{top.maq_estados_tb.fetchdec[1:0]} top.maq_estados_tb.fetchdec[1] top.maq_estados_tb.fetchdec[0]
+[pattern_trace] 1
+[pattern_trace] 0

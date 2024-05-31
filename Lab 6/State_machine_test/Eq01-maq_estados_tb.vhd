@@ -7,37 +7,38 @@
 -- VICTOR AUGUSTO DEL MONEGO : 2378345
 
 -- INICIO DO CODIGO
+
+
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity un_controle is
-port( 	clk, rst:	        in std_logic;
-	      instr:		        in unsigned(15 downto 0);
-	      jump_en,FoDec:	  out std_logic
-	);
+entity maq_estados_tb is
 end entity;
 
-architecture a_un_controle of un_controle is
-
-signal opcode:	unsigned(5 downto 0):="000000";
+architecture Run_tb of maq_estados_tb is
 
 component maq_estados is
-port( 	clk:		    in std_logic;
-	rst:		          in std_logic;
-	fetchDec:	        out std_logic
+port( 	clk, rst:		in std_logic;
+	      state:	    out unsigned(1 downto 0)
 	);
 end component;
 
+signal clk, rst:	std_logic:='0';
+signal fetchDec:	unsigned(1 downto 0):="00";
+--RA: 2358263 => 8263
+--RA: 2358310 => 8310
+--RA: 2378345 => 8345
+
 begin
-
-mq:	maq_estados port map(clk, rst, FoDec);
-
-opcode <= instr(10 downto 5);
-
-jump_en <= 	'1' when opcode="000011" else
-		'0';
-
+	tb: 	maq_estados port map(clk, rst, fetchDec);
+	
+	process begin
+		clk <='0'; 	wait for 50 ns;
+		clk <='1'; 	wait for 50 ns;
+	end process;
+	
 end architecture;
+
 
 -- FIM DO CODIGO

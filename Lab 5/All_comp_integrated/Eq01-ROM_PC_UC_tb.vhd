@@ -24,7 +24,7 @@ port( 	clk:		in std_logic;
 	);
 end component;
 
-signal clk, rst:	std_logic:='0';
+signal clk, rst:	std_logic;
 --RA: 2358263 => 8263
 --RA: 2358310 => 8310
 --RA: 2378345 => 8345
@@ -33,8 +33,9 @@ begin
 	tb: 	ROM_PC_UC port map(clk, rst);
 	
 	process begin
-		clk <='1'; 	wait for 50 ns;
-		clk <='0'; 	wait for 50 ns;
+    clk <= '0';   wait for 0.5 ns;
+		clk <= '1'; 	wait for 50 ns;
+		clk <= '0'; 	wait for 50 ns;
 	end process;
 	process begin
 		rst <= '1'; wait for 200 ns;

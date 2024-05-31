@@ -1,0 +1,6874 @@
+{
+ "builder": {
+  "_version": "5.0.0-dev",
+  "_logger": "hdl_checker.builders.ghdl",
+  "_work_folder": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/.hdl_checker",
+  "_builtin_libraries": [
+   {
+    "name": "std",
+    "case_sensitive": false,
+    "__class__": "Identifier"
+   },
+   {
+    "name": "ieee",
+    "case_sensitive": false,
+    "__class__": "Identifier"
+   },
+   {
+    "name": "src",
+    "case_sensitive": false,
+    "__class__": "Identifier"
+   },
+   {
+    "name": "vendors",
+    "case_sensitive": false,
+    "__class__": "Identifier"
+   }
+  ],
+  "_added_libraries": [
+   {
+    "name": "default_library",
+    "case_sensitive": false,
+    "__class__": "Identifier"
+   }
+  ],
+  "__class__": "GHDL"
+ },
+ "config_file": [
+  {
+   "name": "/tmp/hdl_checker_project_pid137638.json",
+   "__class__": "Path"
+  },
+  1717116376.8326666,
+  "generated"
+ ],
+ "database": {
+  "sources": [
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ALL_COMP/Eq01-maq_estados.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717112377.5593383,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ALL_COMP/Eq01-maq_estados.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        10,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ALL_COMP/Eq01-maq_estados.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        11,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/Lab 5_Complete/Eq01-Ex03FPGA_ramdisp.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717085830.8326304,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/Lab 5_Complete/Eq01-Ex03FPGA_ramdisp.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        14,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/Lab 5_Complete/Eq01-Ex03FPGA_ramdisp.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        15,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/Lab 5_Complete/Eq01-EX03FPGA_maq_estados.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717085830.8316302,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/Lab 5_Complete/Eq01-EX03FPGA_maq_estados.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        10,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/Lab 5_Complete/Eq01-EX03FPGA_maq_estados.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        11,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 2.1/Eq01-ULA.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717085830.7796302,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 2.1/Eq01-ULA.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        13,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 2.1/Eq01-ULA.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        12,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ALL_COMP/Eq01-program_counter.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717091228.4237869,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ALL_COMP/Eq01-program_counter.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        10,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ALL_COMP/Eq01-program_counter.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        11,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 3/Eq01-RegFile.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717085830.8186302,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 3/Eq01-RegFile.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        11,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 3/Eq01-RegFile.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        12,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ALL_COMP/Eq01-ROM_PC_UC.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717091228.4237869,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ALL_COMP/Eq01-ROM_PC_UC.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        10,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ALL_COMP/Eq01-ROM_PC_UC.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        11,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/tmp/tmpwon8fv73.vhd",
+     "__class__": "TemporaryPath"
+    },
+    "mtime": 1717110979.1816761,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/tmp/tmpwon8fv73.vhd",
+       "__class__": "TemporaryPath"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        11,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/tmp/tmpwon8fv73.vhd",
+       "__class__": "TemporaryPath"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        10,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/tmp/tmpweqadzky.vhd",
+     "__class__": "TemporaryPath"
+    },
+    "mtime": 1717110783.4371293,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/tmp/tmpweqadzky.vhd",
+       "__class__": "TemporaryPath"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        13,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/tmp/tmpweqadzky.vhd",
+       "__class__": "TemporaryPath"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        12,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ROM_PC_UC/Eq01-un_atom.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717116171.1320708,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ROM_PC_UC/Eq01-un_atom.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        11,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ROM_PC_UC/Eq01-un_atom.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        10,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ULA_REGS/Eq01-ULARegs.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717096868.0796497,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ULA_REGS/Eq01-ULARegs.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        11,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ULA_REGS/Eq01-ULARegs.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        12,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ROM_PC_UC/Eq01-program_counter.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717088458.0414014,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ROM_PC_UC/Eq01-program_counter.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        10,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ROM_PC_UC/Eq01-program_counter.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        11,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 3A/Eq01-ULARegs_ramdisp.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717085830.8186302,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 3A/Eq01-ULARegs_ramdisp.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        15,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 3A/Eq01-ULARegs_ramdisp.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        14,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/PC2Rom/Eq01-program_counter.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717085830.8586304,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/PC2Rom/Eq01-program_counter.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        11,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/PC2Rom/Eq01-program_counter.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        10,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/State_machine_test/Eq01-maq_estados.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717111919.8477437,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/State_machine_test/Eq01-maq_estados.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        10,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/State_machine_test/Eq01-maq_estados.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        11,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ULA_REGS/Eq01-ULA.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717096406.8470325,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ULA_REGS/Eq01-ULA.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        13,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ULA_REGS/Eq01-ULA.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        12,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/All_comp_integrated/Eq01-maq_estados.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717085830.8316302,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/All_comp_integrated/Eq01-maq_estados.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        10,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/All_comp_integrated/Eq01-maq_estados.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        11,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/tmp/tmpy4sr_k5c.vhd",
+     "__class__": "TemporaryPath"
+    },
+    "mtime": 1717110872.9493792,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/tmp/tmpy4sr_k5c.vhd",
+       "__class__": "TemporaryPath"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        11,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/tmp/tmpy4sr_k5c.vhd",
+       "__class__": "TemporaryPath"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        10,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ALL_COMP/Eq01-conteudo_rom.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717091228.4237869,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ALL_COMP/Eq01-conteudo_rom.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        1,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ALL_COMP/Eq01-conteudo_rom.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        2,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 3A/Eq01-ULARegs_toplevel.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717085830.8186302,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 3A/Eq01-ULARegs_toplevel.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        14,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 3A/Eq01-ULARegs_toplevel.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        13,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/All_comp_integrated/Eq01-un_controle.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717085830.8316302,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/All_comp_integrated/Eq01-un_controle.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        10,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/All_comp_integrated/Eq01-un_controle.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        11,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 4/Eq01-ULARegs.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717096641.2733629,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 4/Eq01-ULARegs.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        11,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 4/Eq01-ULARegs.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        12,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/State_machine_test/Eq01-maq_estados_tb.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717085830.8596303,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/State_machine_test/Eq01-maq_estados_tb.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        13,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/State_machine_test/Eq01-maq_estados_tb.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        12,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 2/Eq01-ULA.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717085830.8176303,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 2/Eq01-ULA.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        12,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 2/Eq01-ULA.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        13,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ROM_PC_UC/Eq01-conteudo_rom.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717091115.9643693,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ROM_PC_UC/Eq01-conteudo_rom.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        1,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ROM_PC_UC/Eq01-conteudo_rom.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        2,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/PC2Rom/Eq01-conteudo_rom.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717085830.8586304,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/PC2Rom/Eq01-conteudo_rom.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        2,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/PC2Rom/Eq01-conteudo_rom.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        1,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ROM_PC_UC/Eq01-ROM_PC_UC.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717090167.432578,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ROM_PC_UC/Eq01-ROM_PC_UC.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        10,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ROM_PC_UC/Eq01-ROM_PC_UC.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        11,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/PC2Rom/Eq01-reg16bits.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717085830.8596303,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/PC2Rom/Eq01-reg16bits.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        10,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/PC2Rom/Eq01-reg16bits.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        11,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ULA_REGS/Eq01-ULARegs_tb.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717098433.6636899,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ULA_REGS/Eq01-ULARegs_tb.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        12,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ULA_REGS/Eq01-ULARegs_tb.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        11,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 3A/Eq01-ULARegs_Hex.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717085830.8186302,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 3A/Eq01-ULARegs_Hex.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        14,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 3A/Eq01-ULARegs_Hex.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        15,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ALL_COMP/Eq01-un_controle.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717091228.4237869,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ALL_COMP/Eq01-un_controle.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        10,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ALL_COMP/Eq01-un_controle.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        11,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ROM_PC_UC/Eq01-maq_estados.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717114418.5670156,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ROM_PC_UC/Eq01-maq_estados.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        10,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ROM_PC_UC/Eq01-maq_estados.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        11,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ALL_COMP/Eq01-RegWrite.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717114348.720032,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ALL_COMP/Eq01-RegWrite.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        14,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ALL_COMP/Eq01-RegWrite.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        15,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 2.1/devkits/DE10_LITE_Golden_Top/DE10_LITE_Golden_Top.v",
+     "__class__": "Path"
+    },
+    "mtime": 1717085830.8046303,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/PC2Rom/Eq01-pc_rom_tb.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717085830.8586304,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/PC2Rom/Eq01-pc_rom_tb.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        13,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/PC2Rom/Eq01-pc_rom_tb.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        12,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/Lab 5_Complete/Eq01-EX03FPGA_conteudo_rom.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717085830.8316302,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/Lab 5_Complete/Eq01-EX03FPGA_conteudo_rom.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        1,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/Lab 5_Complete/Eq01-EX03FPGA_conteudo_rom.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        2,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/State_machine_test/Eq01-maq_estados_tb.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717111387.8958724,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/State_machine_test/Eq01-maq_estados_tb.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        13,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/State_machine_test/Eq01-maq_estados_tb.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        12,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/Lab 5_Complete/Eq01-EX03FPGA_program_counter.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717085830.8316302,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/Lab 5_Complete/Eq01-EX03FPGA_program_counter.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        11,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/Lab 5_Complete/Eq01-EX03FPGA_program_counter.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        10,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ALL_COMP/Eq01-ULARegs.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717096868.0796497,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ALL_COMP/Eq01-ULARegs.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        11,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ALL_COMP/Eq01-ULARegs.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        12,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 2.1/toplevel.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717085830.8176303,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 2.1/toplevel.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        19,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 2.1/toplevel.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        20,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/All_comp_integrated/Eq01-ROM_PC_UC.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717085830.8306303,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/All_comp_integrated/Eq01-ROM_PC_UC.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        10,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/All_comp_integrated/Eq01-ROM_PC_UC.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        11,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 4/Eq01-ULARegs_tb.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717096574.4309835,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 4/Eq01-ULARegs_tb.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        12,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 4/Eq01-ULARegs_tb.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        11,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 3A/Eq01-ULA.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717085830.8186302,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 3A/Eq01-ULA.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        12,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 3A/Eq01-ULA.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        13,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/All_comp_integrated/Eq01-ROM_PC_UC_tb.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717085830.8306303,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/All_comp_integrated/Eq01-ROM_PC_UC_tb.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        12,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/All_comp_integrated/Eq01-ROM_PC_UC_tb.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        13,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 3/Eq01-reg16bits.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717085830.8186302,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 3/Eq01-reg16bits.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        10,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 3/Eq01-reg16bits.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        11,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/All_comp_integrated/Eq01-conteudo_rom.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717085830.8306303,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/All_comp_integrated/Eq01-conteudo_rom.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        2,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/All_comp_integrated/Eq01-conteudo_rom.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        1,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/State_machine_test/Eq01-maq_estados.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717085830.8596303,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/State_machine_test/Eq01-maq_estados.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        10,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/State_machine_test/Eq01-maq_estados.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        11,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 2/Eq01-ULA/Eq01-ULA_tb.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717085830.8186302,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 2/Eq01-ULA/Eq01-ULA_tb.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        12,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 2/Eq01-ULA/Eq01-ULA_tb.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        13,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/All_comp_integrated/Eq01-program_counter.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717085830.8316302,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/All_comp_integrated/Eq01-program_counter.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        10,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/All_comp_integrated/Eq01-program_counter.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        11,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 2/Eq01-ULA/Eq01-ULA.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717085830.8186302,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 2/Eq01-ULA/Eq01-ULA.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        11,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 2/Eq01-ULA/Eq01-ULA.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        12,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/Lab 5_Complete/Eq01-Ex03FPGA_ROM_PC_UC.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717085830.8316302,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/Lab 5_Complete/Eq01-Ex03FPGA_ROM_PC_UC.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        10,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/Lab 5_Complete/Eq01-Ex03FPGA_ROM_PC_UC.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        11,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 3/Eq01-RegFile_tb.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717085830.8186302,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 3/Eq01-RegFile_tb.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        12,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 3/Eq01-RegFile_tb.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        13,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/tmp/tmpwbcvedzq.vhd",
+     "__class__": "TemporaryPath"
+    },
+    "mtime": 1717116482.1110435,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/tmp/tmpwbcvedzq.vhd",
+       "__class__": "TemporaryPath"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        11,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/tmp/tmpwbcvedzq.vhd",
+       "__class__": "TemporaryPath"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        10,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ALL_COMP/Eq01-ROM_PC_UC_tb.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717091228.4237869,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ALL_COMP/Eq01-ROM_PC_UC_tb.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        13,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ALL_COMP/Eq01-ROM_PC_UC_tb.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        12,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 2/Eq01-ULA_tb.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717085830.8186302,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 2/Eq01-ULA_tb.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        13,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 2/Eq01-ULA_tb.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        12,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/PC2Rom/Eq01-pc_rom.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717085830.8586304,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/PC2Rom/Eq01-pc_rom.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        11,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/PC2Rom/Eq01-pc_rom.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        10,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ULA_REGS/Eq01-RegWrite.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717097980.3230736,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ULA_REGS/Eq01-RegWrite.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        15,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ULA_REGS/Eq01-RegWrite.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        14,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/All_comp_integrated/Eq01-reg16bits.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717085830.8316302,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/All_comp_integrated/Eq01-reg16bits.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        11,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/All_comp_integrated/Eq01-reg16bits.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        10,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ROM_PC_UC/Eq01-reg16bits.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717085687.268289,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ROM_PC_UC/Eq01-reg16bits.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        10,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ROM_PC_UC/Eq01-reg16bits.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        11,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ROM_PC_UC/Eq01-un_controle.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717116373.6796553,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ROM_PC_UC/Eq01-un_controle.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        10,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ROM_PC_UC/Eq01-un_controle.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        11,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/Lab 5_Complete/Eq01-Ex03FPGA_Hex.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717085830.8316302,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/Lab 5_Complete/Eq01-Ex03FPGA_Hex.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        14,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/Lab 5_Complete/Eq01-Ex03FPGA_Hex.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        15,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/Lab 5_Complete/Eq01-Ex03FPGA_toplevel.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717085830.8326304,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/Lab 5_Complete/Eq01-Ex03FPGA_toplevel.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        10,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/Lab 5_Complete/Eq01-Ex03FPGA_toplevel.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        11,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/tmp/tmp14f66hv8.vhd",
+     "__class__": "TemporaryPath"
+    },
+    "mtime": 1717115352.1671517,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/tmp/tmp14f66hv8.vhd",
+       "__class__": "TemporaryPath"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        11,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/tmp/tmp14f66hv8.vhd",
+       "__class__": "TemporaryPath"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        10,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/Lab 5_Complete/Eq01-Ex03FPGA_reg16bits.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717085830.8326304,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/Lab 5_Complete/Eq01-Ex03FPGA_reg16bits.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        10,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/Lab 5_Complete/Eq01-Ex03FPGA_reg16bits.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        11,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/cabecalho.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717085830.8596303,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 4/Eq01-RegFile.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717085830.8306303,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 4/Eq01-RegFile.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        12,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 4/Eq01-RegFile.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        11,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/tmp/tmp6_kujbng.vhd",
+     "__class__": "TemporaryPath"
+    },
+    "mtime": 1717111081.3229616,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/tmp/tmp6_kujbng.vhd",
+       "__class__": "TemporaryPath"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        11,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/tmp/tmp6_kujbng.vhd",
+       "__class__": "TemporaryPath"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        10,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/tmp/tmp2_j51iix.vhd",
+     "__class__": "TemporaryPath"
+    },
+    "mtime": 1717114233.923565,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/tmp/tmp2_j51iix.vhd",
+       "__class__": "TemporaryPath"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        11,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/tmp/tmp2_j51iix.vhd",
+       "__class__": "TemporaryPath"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        10,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ALL_COMP/Eq01-reg16bits.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717091228.4237869,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ALL_COMP/Eq01-reg16bits.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        10,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ALL_COMP/Eq01-reg16bits.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        11,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 4/Eq01-ULA.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717096490.279506,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 4/Eq01-ULA.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        13,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 4/Eq01-ULA.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        12,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ROM_PC_UC/Eq01-ROM_PC_UC_tb.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717085687.272289,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ROM_PC_UC/Eq01-ROM_PC_UC_tb.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        12,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ROM_PC_UC/Eq01-ROM_PC_UC_tb.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        13,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 4/Eq01-reg16bits.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717085830.8306303,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 4/Eq01-reg16bits.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        11,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 4/Eq01-reg16bits.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        10,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ALL_COMP/Eq01-ULA.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717096406.8470325,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ALL_COMP/Eq01-ULA.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        13,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ALL_COMP/Eq01-ULA.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        12,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/Lab 5_Complete/Eq01-Ex03FPGA_un_controle.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717085830.8326304,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/Lab 5_Complete/Eq01-Ex03FPGA_un_controle.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        10,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/Lab 5_Complete/Eq01-Ex03FPGA_un_controle.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        11,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   },
+   {
+    "path": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 2.1/displays.vhd",
+     "__class__": "Path"
+    },
+    "mtime": 1717085830.8046303,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 2.1/displays.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "numeric_std",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        21,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     },
+     {
+      "owner": {
+       "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 2.1/displays.vhd",
+       "__class__": "Path"
+      },
+      "name": {
+       "name": "std_logic_1164",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "library": {
+       "name": "ieee",
+       "case_sensitive": false,
+       "__class__": "VhdlIdentifier"
+      },
+      "locations": [
+       [
+        20,
+        4
+       ]
+      ],
+      "__class__": "RequiredDesignUnit"
+     }
+    ],
+    "diags": []
+   }
+  ],
+  "inferred_libraries": [
+   {
+    "name": "/tmp/tmpxk4_l3vr.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmph_1f7wh1.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmph9hyklzm.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpktr_2wy4.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpqbor0u4n.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ROM_PC_UC/Eq01-un_atom.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmptourq5ap.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpcuxhnfru.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpteuh6whu.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpemo885nn.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp4snsjdtx.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmplnwuamxi.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp2gcd0q7c.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpjbcd1shc.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmph2avng4z.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp37g7ns6a.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmptkpmccuk.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpw6jyxgqs.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpqdirfsvu.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpz9sf2gr_.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpontbq8b0.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp39id9pe4.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpmzdimjli.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpr7vhhxmo.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpoqj0dx9u.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpozaj3ezj.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmphvgszc8f.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp6d3zvy7f.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp69n4isfg.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp2mufd21s.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpjnl1cmuf.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpu442trrx.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpiaivs7tu.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpssp1yvlo.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpss3t37sq.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpjgl_k4gl.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ROM_PC_UC/Eq01-un_controle.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp6_kujbng.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp6pwpx3p4.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpu91wiaun.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpr6nop7nf.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpaudnjnjf.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpr3nfb3gt.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpsplq5xdj.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpdzr1l1fc.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpop23sx56.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpndv0zn_6.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpdvlsb9fz.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmppnd67ji_.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpy821lesb.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp0ws6j2no.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp2689tj90.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpyczvesyn.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpumgwsujo.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpwon8fv73.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpbme83hmb.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp0h1u84q7.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpebp8thl5.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/State_machine_test/Eq01-maq_estados.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp2abfy5zb.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpgyyxp3sa.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp427nzpgw.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpkiag11ex.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp2udrnxit.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpz_qqwx0f.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpfxzspzpj.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmphti614lr.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp_wt0i10p.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmprhsalkx_.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpq1aia44c.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmptkt86s1d.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpdc_gcxl2.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpa5f45b37.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpdtp_9kor.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp7_09_mgu.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmppng5sonk.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpne39qun3.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp6rh1lvbb.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpq1uvg5nc.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmptgh4pg6s.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp3tut576z.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpf4kbrmjh.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpqe1dx4te.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmplum2pk9_.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpc77i7tz3.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpw1g23ujr.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp4vjz01dv.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpdcg95zpk.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp7fa3jkc_.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpp25vfdnu.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp9fsehxtu.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpju8k7e6r.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp6itpxo6z.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpcf1ik5o4.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpe4mrotld.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpv9gieeer.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpw324x815.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpxgzqn_2w.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpvtvxvqw0.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp7mfowho9.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp041mfu2u.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpk6pc9gei.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpyf2ki_ne.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpt01vou_e.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp7h5y8ll3.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpyyyogeu6.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp4a8b9l6l.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp4b2k3i20.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpzea69z3e.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp_0pslud2.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpqiir0y8n.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpvpe0klu3.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpdsujo1pm.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpadvuchrk.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpl8i3_9a4.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpybnky42_.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp8gcpiq8w.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpxl_4ol4o.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpetq9t6fb.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpbz9wp99y.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpp4t60n_c.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp8y7ne3ow.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpfcfuhs_1.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpd63ts343.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpkkblpurg.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmppbgsnvr0.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpl2jvui3i.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmptuagp0io.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpy4sr_k5c.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpc3qre28e.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpte2m7xrn.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp1l5a7z3d.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmptebwtr0m.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp1f06y09b.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpo6pxte5x.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpcmxiqiju.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpbvp2wyv6.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpwb7wtbca.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpl1dpszrg.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpwpfeddqu.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpxm0ebgrl.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmppz16cler.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp419bedoz.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmptwruf7nv.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpuitrtzx3.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpegvx872p.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmptfc7zyui.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpdgm1plma.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ALL_COMP/Eq01-RegWrite.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ROM_PC_UC/Eq01-maq_estados.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmplb5fw05n.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpaldq2iyc.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmplpkm1q6m.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpi5np1fu6.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp4feclqvi.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpweqadzky.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpc536kqam.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpozflm7c6.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpz6gqn34x.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpjcgokvu2.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpwndtu_wa.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpfab2a6hc.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpscsjsx2m.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpdzebfwbl.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp26p8ig6v.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpvgxgnp8s.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp14f66hv8.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpb2dpi28b.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpkze290g4.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpjv8fy9ms.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpphhq7f_z.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpu01gcu39.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpthshnh3g.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpxf9e4nde.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpyi7bvwgp.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpev1zs4fh.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpqet6v5vh.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpekyh32gt.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpjx9an4sj.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpeofen80k.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmptec18u0c.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp6dsxgk_p.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp7k6qb5qe.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpo8p3z8sb.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmppdqhagkv.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp1g730t8k.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmplm9tbiak.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp3jg2wpn9.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp1hmo6jv5.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpqu82pim2.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpido4ghai.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpc7v8_o7t.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpgx2cs6ti.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpwgxez2wj.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpw1kb5dfp.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp_uw6t_qe.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpmko3wpfa.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpeqmar0rb.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpxo4vx293.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpnjw5a4c8.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/State_machine_test/Eq01-maq_estados_tb.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp9zf8emg1.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp4snq38zo.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpwbcvedzq.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpi88i_qwy.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpe8ftghml.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpxd3lv1gx.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpr6enxcua.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp1byn9mw1.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp0jmqrz0f.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp6f_fnb6n.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpgptx_zog.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpjg87c6y6.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpjl9twk82.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp1dds48ff.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpiz83t9fm.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpf_8g_4yp.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp2_j51iix.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmplr33vjb4.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpeaspxj1k.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp65v57rm4.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpp9rezj8t.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmprqiko55p.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpq8p8tkyq.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpij52_7sx.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp4rn_cmq1.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpzurb3own.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmph0k77tz1.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp3c36b805.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp9bg7iqma.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpwapku01p.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpv9g7kgxs.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpt_1n4919.vhd",
+    "__class__": "Path"
+   }
+  ],
+  "design_units": [
+   {
+    "owner": {
+     "name": "/tmp/tmp6_kujbng.vhd",
+     "__class__": "TemporaryPath"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "maq_estados",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      13,
+      8
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/All_comp_integrated/Eq01-reg16bits.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "reg16bits",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      13,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/PC2Rom/Eq01-program_counter.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "program_counter",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      13,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/All_comp_integrated/Eq01-program_counter.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "program_counter",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      13,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 3A/Eq01-ULARegs_Hex.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "hex7seg",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      17,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/tmp/tmpy4sr_k5c.vhd",
+     "__class__": "TemporaryPath"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "maq_estados",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      13,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ULA_REGS/Eq01-ULA.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "ULA",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      15,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ALL_COMP/Eq01-program_counter.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "program_counter",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      13,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 2/Eq01-ULA.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "ULA",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      15,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 2.1/Eq01-ULA.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "ULA",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      15,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/PC2Rom/Eq01-conteudo_rom.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "rom",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      4,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/Lab 5_Complete/Eq01-Ex03FPGA_ramdisp.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "ramDisp",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      18,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/All_comp_integrated/Eq01-ROM_PC_UC_tb.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "rom_pc_uc_tb",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      15,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/tmp/tmp2_j51iix.vhd",
+     "__class__": "TemporaryPath"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "un_controle",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      13,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 4/Eq01-ULARegs.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "ULARegs",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      14,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ROM_PC_UC/Eq01-ROM_PC_UC_tb.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "rom_pc_uc_tb",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      15,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 4/Eq01-RegFile.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "RegFile",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      14,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/All_comp_integrated/Eq01-ROM_PC_UC.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "ROM_PC_UC",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      13,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ROM_PC_UC/Eq01-ROM_PC_UC.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "ROM_PC_UC",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      13,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ALL_COMP/Eq01-RegWrite.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "RegWrite",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      18,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 4/Eq01-ULA.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "ULA",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      15,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 3A/Eq01-ULARegs_ramdisp.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "ramDisp",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      18,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/tmp/tmp14f66hv8.vhd",
+     "__class__": "TemporaryPath"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "un_atom",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      13,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/All_comp_integrated/Eq01-conteudo_rom.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "rom",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      4,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/Lab 5_Complete/Eq01-Ex03FPGA_reg16bits.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "reg16bits",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      13,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/All_comp_integrated/Eq01-maq_estados.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "maq_estados",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      13,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ULA_REGS/Eq01-ULARegs.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "ULARegs",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      14,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/tmp/tmpwbcvedzq.vhd",
+     "__class__": "TemporaryPath"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "un_atom",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      13,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ROM_PC_UC/Eq01-un_controle.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "un_controle",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      13,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 3A/Eq01-ULA.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "ULA",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      15,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 3A/Eq01-ULARegs_toplevel.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "toplevel",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      16,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ALL_COMP/Eq01-ROM_PC_UC_tb.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "rom_pc_uc_tb",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      15,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ALL_COMP/Eq01-ULARegs.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "ULARegs",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      14,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/Lab 5_Complete/Eq01-Ex03FPGA_un_controle.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "un_controle",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      13,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ROM_PC_UC/Eq01-maq_estados.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "maq_estados",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      13,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/Lab 5_Complete/Eq01-EX03FPGA_maq_estados.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "maq_estados",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      13,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/Lab 5_Complete/Eq01-EX03FPGA_program_counter.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "program_counter",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      13,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/State_machine_test/Eq01-maq_estados.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "maq_estados",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      13,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 2.1/toplevel.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "toplevel",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      22,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ALL_COMP/Eq01-ROM_PC_UC.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "ROM_PC_UC",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      13,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ROM_PC_UC/Eq01-reg16bits.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "reg16bits",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      13,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ROM_PC_UC/Eq01-conteudo_rom.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "rom",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      4,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ROM_PC_UC/Eq01-program_counter.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "program_counter",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      13,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/State_machine_test/Eq01-maq_estados.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "maq_estados",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      13,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ALL_COMP/Eq01-ULA.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "ULA",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      15,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ROM_PC_UC/Eq01-un_atom.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "un_atom",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      13,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/Lab 5_Complete/Eq01-Ex03FPGA_toplevel.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "toplevel",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      13,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/tmp/tmpweqadzky.vhd",
+     "__class__": "TemporaryPath"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "maq_estados_tb",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      15,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ALL_COMP/Eq01-maq_estados.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "maq_estados",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      13,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 4/Eq01-ULARegs_tb.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "ULARegs_tb",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      14,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ALL_COMP/Eq01-conteudo_rom.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "rom",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      4,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 2.1/displays.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "displays",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      24,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 2.1/devkits/DE10_LITE_Golden_Top/DE10_LITE_Golden_Top.v",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "DE10_LITE_Golden_Top",
+     "case_sensitive": true,
+     "__class__": "VerilogIdentifier"
+    },
+    "locations": [
+     [
+      28,
+      7
+     ]
+    ],
+    "__class__": "VerilogDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/Lab 5_Complete/Eq01-Ex03FPGA_ROM_PC_UC.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "ROM_PC_UC",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      13,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ALL_COMP/Eq01-reg16bits.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "reg16bits",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      13,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ULA_REGS/Eq01-ULARegs_tb.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "ULARegs_tb",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      14,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/State_machine_test/Eq01-maq_estados_tb.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "maq_estados_tb",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      15,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 2/Eq01-ULA/Eq01-ULA.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "ULA",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      14,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/PC2Rom/Eq01-pc_rom_tb.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "pc_rom_tb",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      15,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 4/Eq01-reg16bits.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "reg16bits",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      13,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/State_machine_test/Eq01-maq_estados_tb.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "maq_estados_tb",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      15,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/tmp/tmpwon8fv73.vhd",
+     "__class__": "TemporaryPath"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "maq_estados",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      13,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/PC2Rom/Eq01-pc_rom.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "pc_rom",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      13,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 2/Eq01-ULA/Eq01-ULA_tb.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "ULA_tb",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      15,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/All_comp_integrated/Eq01-un_controle.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "un_controle",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      13,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/PC2Rom/Eq01-reg16bits.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "reg16bits",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      13,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ULA_REGS/Eq01-RegWrite.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "RegWrite",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      18,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 2/Eq01-ULA_tb.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "ULA_tb",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      15,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 3/Eq01-RegFile.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "RegFile",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      14,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/Lab 5_Complete/Eq01-Ex03FPGA_Hex.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "hex7seg",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      17,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ALL_COMP/Eq01-un_controle.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "un_controle",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      13,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 3/Eq01-reg16bits.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "reg16bits",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      13,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 5/Lab 5_Complete/Eq01-EX03FPGA_conteudo_rom.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "rom",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      4,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 3/Eq01-RegFile_tb.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "RegFile_tb",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      15,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   }
+  ],
+  "__class__": "Database"
+ },
+ "__version__": "0.7.4"
+}

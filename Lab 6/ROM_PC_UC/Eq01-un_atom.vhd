@@ -12,33 +12,22 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 ------------------------------------------------------------------------
-entity reg16bits is
-port( 	clk:		in std_logic;
-	rst:		in std_logic;
-	wr_en:		in std_logic;
-	data_in:	in unsigned(15 downto 0);
-	data_out:	out unsigned(15 downto 0)
+entity un_atom is
+port( 	op_rom, opcode:     in unsigned(5 downto 0);
+	      FetDecEx:           in unsigned(1 downto 0);
+        instr_en:	          out std_logic;
+        instr_sel:          out unsigned(1 downto 0)
 	);
 end entity;
 ------------------------------------------------------------------------
-architecture a_reg8bits of reg16bits is
-------------------------------------------------------------------------
-  signal rgst:	unsigned(15 downto 0);
-------------------------------------------------------------------------
+architecture a_un_atom of un_atom is
+
 begin
 
-  process(clk, rst, wr_en)
-  begin
-	  if rst='1' then
-		  rgst <= x"0000";
-	  elsif wr_en='1' then
-		  if rising_edge(clk) then
-			  rgst <= data_in;
-		  end if;
-	  end if;
-  end process;
+instr_en <= 	'1' when std_logic_vector(opcode) = std_logic_vector(op_rom) and FetDecEx = "10" else '0';
 
-  data_out <= rgst;
+instr_sel <=  "00" when std_logic_vector(opcode) = std_logic_vector(op_rom) and FetDecEx = "00" else
+              "01" when std_logic_vector(opcode) = std_logic_vector(op_rom) and FetDecEx = "01" else "11";              
 
 end architecture;
 

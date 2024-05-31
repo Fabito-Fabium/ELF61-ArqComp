@@ -12,40 +12,43 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
+------------------------------------------------------------------------
 entity ULARegs is
 port( 	clk, rst, wr_en, IorR:	in std_logic;
-	A1, A2, A3:		in unsigned (2 downto 0);
-	op:			      in std_logic_vector (5 downto 0);
-	Cext:			    in unsigned (15 downto 0)
+	      A1, A2, A3:		          in unsigned (4 downto 0);
+	      op:			                in std_logic_vector (5 downto 0);
+	      Cext:			              in unsigned (15 downto 0)
 	);
 end entity;
-
+------------------------------------------------------------------------
 architecture op_ULARegs of ULARegs is
-component ULA is
-	port( 
+------------------------------------------------------------------------
+  component ULA is
+	  port( 
 --input signal
-	in_A: 		in unsigned (15 downto 0);
-	in_B: 		in unsigned (15 downto 0);
-	op: 			in std_logic_vector (5 downto 0);
+	  in_A: 		in unsigned (15 downto 0);
+	  in_B: 		in unsigned (15 downto 0);
+	  op: 			in std_logic_vector (5 downto 0);
 --output signal		
-	out_ULA: 	out unsigned (15 downto 0);
-	zero: 		out std_logic;
-	LT: 		  out std_logic);
-end component;
-
-component RegWrite is
-port( 	clk, wr_en:	  in std_logic;
-	      A1, A2, A3:		in unsigned (2 downto 0);
-	      WD3:			    in unsigned (15 downto 0);
-	      RD1, RD2:		  out unsigned (15 downto 0) 	:= x"0000"
-	);
-end component;
-
-signal out_ULA, RD1, RD2, in_B:	unsigned (15 downto 0);
-signal zero, LT:		            std_logic;
-
+	  out_ULA: 	out unsigned (15 downto 0);
+	  zero: 		out std_logic;
+	  LT: 		  out std_logic);
+  end component;
+------------------------------------------------------------------------
+  component RegFile is
+  port( 	clk, rst, wr_en:	in std_logic;
+	        A1, A2, A3:		    in unsigned (4 downto 0);
+	        WD3:			        in unsigned (15 downto 0);
+	        RD1, RD2:		      out unsigned (15 downto 0) 	:= x"0000"
+	  );
+  end component;
+------------------------------------------------------------------------
+  signal out_ULA, RD1, RD2, in_B:	unsigned (15 downto 0);
+  signal zero, LT:		            std_logic;
+------------------------------------------------------------------------
 begin
-	Bank:	RegWrite port map(clk, wr_en, A1, A2, A3, out_ULA, RD1, RD2);
+
+	Bank:	RegFile port map(clk, rst, wr_en, A1, A2, A3, out_ULA, RD1, RD2);
 	ULA0:	ULA	port map(RD1, in_B, op, out_ULA, zero, LT);
 --mux:
 	in_B <= RD2 	when IorR='1' else

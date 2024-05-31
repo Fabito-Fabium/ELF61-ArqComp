@@ -15,24 +15,26 @@ use ieee.numeric_std.all;
 entity ULARegs_tb is
 end entity;
 
+------------------------------------------------------------------------
 architecture testBench of ULARegs_tb is
 component ULARegs is
 port( 	clk, rst, wr_en, IorR:	in std_logic;
-	      A1, A2, A3:		          in unsigned (2 downto 0);
+	      A1, A2, A3:		          in unsigned (4 downto 0);
 	      op:	                		in std_logic_vector (5 downto 0);
 	      Cext:	              		in unsigned (15 downto 0)
 	);
 end component;
 
 signal 	clk, rst, wr_en, IorR:	std_logic			:='0';
-signal	A1, A2, A3:		          unsigned (2 downto 0)		:="000";
+signal	A1, A2, A3:		          unsigned (4 downto 0)		:="00000";
 signal	op:			                std_logic_vector (5 downto 0) 	:="000000";
 signal 	Cext:			              unsigned (15 downto 0)		:=x"0000";
-
+------------------------------------------------------------------------
 begin
 	tB:	ULARegs port map(clk, rst, wr_en, IorR, A1, A2, A3, op, Cext);
 	process begin
-		rst <= '1'; wait for 200 ns;
+    wait for 10 ns;
+    rst <= '1'; wait for 200 ns;
 		rst <= '0'; wait;
 	end process;
 	
@@ -44,26 +46,26 @@ begin
 	process begin
 		wait for 200 ns;
     op  <= "001110";
-    A3 	<= "110"; 	wait for 25 ns;
+    A3 	<= "00110"; 	wait for 25 ns;
 		Cext 	<= to_unsigned(16#008263#, Cext'length);
 		wr_en 	<= '1'; 	wait for 75 ns;
 		wr_en 	<= '0';
 		
-		A3 	<= "111"; 	wait for 25 ns;
+		A3 	<= "00111"; 	wait for 25 ns;
 		Cext 	<= to_unsigned(16#008345#, Cext'length);
 		wr_en 	<= '1'; 	wait for 75 ns;
 		wr_en 	<= '0';
 		
-		A3	<= "110";
+		A3	<= "00110";
 		IorR <= '1';
-		A1	<= "111";	
-		A2	<= "110";	wait for 125 ns;
+		A1	<= "00111";	
+		A2	<= "00110";	wait for 125 ns;
 		op	<= "000010";
 		wr_en	<= '1';		wait for 75 ns;
 		wr_en	<= '0';
 		
-		A1	<= "110";
-		A2	<= "000";	wait for 25 ns;
+		A1	<= "00110";
+		A2	<= "00000";	wait for 25 ns;
 		
 		wait;
 	

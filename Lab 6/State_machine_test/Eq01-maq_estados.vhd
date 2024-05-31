@@ -12,28 +12,27 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 entity maq_estados is
-port( 	clk:		in std_logic;
-	rst:		in std_logic;
-	fetchDec:	out std_logic
+port( 	clk, rst:		in std_logic;
+	      state:	    out unsigned(1 downto 0)
 	);
 end entity;
 
 
-architecture Tflpping of maq_estados is
+architecture change_state of maq_estados is
 
-signal estado:	std_logic:='0';
+signal state_s:	unsigned(1 downto 0):="00";
 
 begin
 
-process(clk, rst, estado)
+process(clk, rst, state_s)
 
 begin
 	if rst='1' then
-		fetchDec <= '0';
+		state <= "00";
 	elsif rising_edge(clk) then
-		estado <= not(estado);
+		state_s <= (state_s(0)) & (state_s(1) xnor state_s(0));
 	end if;
-	fetchDec <= estado;
+	state <= state_s;
 end process;
 
 

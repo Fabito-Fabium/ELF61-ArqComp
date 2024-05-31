@@ -12,7 +12,7 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 entity ROM_PC_UC is
-port( 	clk, rst:		in std_logic:='0'
+port( 	clk, rst:		in std_logic
 	);
 end entity;
 
@@ -40,9 +40,9 @@ port( 	clk : 		in std_logic;
 );
 end component;
 
-signal FoDec, jump_en:		std_logic:='0';
-signal addrs, data_out:		unsigned(15 downto 0):=(others => '0');
-signal instr:			unsigned(7 downto 0):=(others => '0');
+signal FoDec, jump_en:		std_logic;
+signal addrs, data_out:		unsigned(15 downto 0);
+signal instr:			unsigned(7 downto 0);
 
 
 begin

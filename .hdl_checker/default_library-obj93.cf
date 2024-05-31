@@ -1,0 +1,18 @@
+v 4
+file / "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ROM_PC_UC/Eq01-maq_estados.vhd" "6bcd16e6bf54e7e447b0621ecfa717318d6c1fca" "20240531002536.472":
+  entity maq_estados at 10( 337) + 0 on 164;
+  architecture change_state of maq_estados at 21( 522) + 0 on 165;
+file / "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/State_machine_test/Eq01-maq_estados_tb.vhd" "cc43eb9d6bd95144f12a79c79c5b5084b16ba9fe" "20240530232308.413":
+  entity maq_estados_tb at 12( 339) + 0 on 96;
+  architecture run_tb of maq_estados_tb at 19( 447) + 0 on 97;
+file / "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ALL_COMP/Eq01-RegWrite.vhd" "c5db2e7ca142c92938ebf82dd9661efeaac5c95b" "20240531001229.238":
+  entity regwrite at 14( 467) + 0 on 124;
+  architecture a_ram of regwrite at 29( 912) + 0 on 125;
+file / "/tmp/tmphvgszc8f.vhd" "c84f1dc11249601582399a6ce2f5e38117432148" "20240531001723.713":
+  architecture a_un_atom of un_controle at 21( 568) + 0 on 145;
+file / "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ROM_PC_UC/Eq01-un_atom.vhd" "fac09b511b53fb37e8ca73895ff67001a02b505c" "20240531004617.979":
+  entity un_atom at 10( 337) + 0 on 218;
+  architecture a_un_atom of un_atom at 22( 629) + 0 on 219;
+file / "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ROM_PC_UC/Eq01-un_controle.vhd" "bb760cccc3938de95e8cafd0dfeda09967ddc880" "20240531004614.199":
+  entity un_controle at 10( 337) + 0 on 216;
+  architecture a_un_controle of un_controle at 22( 633) + 0 on 217;

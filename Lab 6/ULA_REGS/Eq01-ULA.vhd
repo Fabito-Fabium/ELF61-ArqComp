@@ -13,6 +13,8 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
+------------------------------------------------------------------------
+
 entity ULA is
 	port( 
 --input signal
@@ -22,13 +24,13 @@ entity ULA is
 --output signal		
 		out_ULA: 	out unsigned (15 downto 0);
 		zero: 		out std_logic;
-		LT: 		out std_logic);
+		LT: 		  out std_logic);
 end entity;
-
+------------------------------------------------------------------------
 architecture ULA_arch of ULA is
-
-signal inter_out: 		unsigned(15 downto 0);
-
+------------------------------------------------------------------------
+  signal inter_out: 		unsigned(15 downto 0);
+------------------------------------------------------------------------
 begin
 
 	inter_out <=   	
@@ -39,10 +41,10 @@ begin
 	out_ULA		<= inter_out;
 			
 	LT 	<= 	'1' when std_logic_vector(in_A) < std_logic_vector(in_B) else 
-			'0';
+			    '0';
 	
 	zero 	 <=	'1' when std_logic_vector(inter_out) = "0000000000000000" else 
-			'0';
+			      '0';
 	
 end architecture;		
 
