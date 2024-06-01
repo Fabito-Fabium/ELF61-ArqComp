@@ -15,7 +15,7 @@ use ieee.numeric_std.all;
 entity ROM_PC_UC is
 port( 	clk, rst:		in std_logic:='0';
         FetDecEx:   out unsigned(1 downto 0);
-        instr_en:   out unsigned(4 downto 0):=(others => '0');
+        instr_en:   out unsigned(6 downto 0):=(others => '0');
         instr:      out unsigned(15 downto 0));
 end entity;
 ------------------------------------------------------------------------
@@ -24,7 +24,7 @@ architecture integration of ROM_PC_UC is
   component un_controle is
   port( 	clk, rst:	          in std_logic;
 	        instr:		          in unsigned(15 downto 0);
-	        instr_en:	          out unsigned(6 downto 0);
+	        instr_en:	          out unsigned(7 downto 0);
           FetDecEx:           out unsigned(1 downto 0)
 	);
   end component;
@@ -44,7 +44,7 @@ architecture integration of ROM_PC_UC is
   end component;
 ------------------------------------------------------------------------
   signal wr_en_pc, jump_en:     std_logic;
-  signal interm_en:             unsigned(6 downto 0):=(others => '0');
+  signal interm_en:             unsigned(7 downto 0):=(others => '0');
   signal FDEinterm:             unsigned(1 downto 0):=(others => '0');
   signal pcImm, pc_out: 		    unsigned(15 downto 0):=(others => '0');
   signal instrSgnl:			        unsigned(15 downto 0):=(others => '0');
@@ -55,7 +55,7 @@ begin
   r0m:	rom		          port map(clk, pc_out, instrSgnl);
   uctl:	un_controle	    port map(clk, rst, instrSgnl, interm_en, FDEinterm);
 
-  instr_en  <= interm_en(5 downto 4) & interm_en(2 downto 0);
+  instr_en  <= interm_en(7 downto 4) & interm_en(2 downto 0);
   jump_en   <= interm_en(3);
 
   FetDecEx  <= FDEinterm;

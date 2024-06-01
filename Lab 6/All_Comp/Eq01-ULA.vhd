@@ -33,9 +33,9 @@ architecture ULA_arch of ULA is
 begin
 
 	inter_out <=   	
-      in_A + in_B 				when op="001110" or op="110000" or op="000000" else
-			in_A - in_B 				when op="001101" or op="110011" else
-			in_A / in_B  				when op="000010" and (in_B /= x"0000") else
+      in_A + in_B 				when  op="001110" or op="110000" or op="000000" else
+      in_A - in_B 				when  op="001101" or op="110011"  else
+			in_A / in_B  				when (op="111111" or op="000010" ) and (in_B /= x"0000") else
 			"0000000000000000";
 	out_ULA		<= inter_out;
 			

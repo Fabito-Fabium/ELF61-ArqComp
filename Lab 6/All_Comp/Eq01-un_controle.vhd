@@ -15,7 +15,7 @@ use ieee.numeric_std.all;
 entity un_controle is
 port( 	clk, rst:	          in std_logic;
 	      instr:		          in unsigned(15 downto 0);
-	      instr_en:	          out unsigned(6 downto 0);
+	      instr_en:	          out unsigned(7 downto 0);
         FetDecEx:           out unsigned(1 downto 0)
 	);
 end entity;
@@ -39,9 +39,9 @@ architecture a_un_controle of un_controle is
   type List is array (0 to instr_en'length-1) of unsigned(5 DOWNTO 0);
 ------------------------------------------------------------------------  
   constant opList : List := (
-	  0  => "001110", 1  => "001101", 2  => "000010", 
-    3  => "000011", 4  => "110000", 5  => "000000", 
-    6  => "000001", others => (others => '0'));
+	  0  => "001110", 1  => "001101", 2  => "111111", 
+    3  => "000011", 4  => "110000", 5  => "110011", 
+    6  => "000000", 7  => "000010", others => (others => '0'));
 ------------------------------------------------------------------------
   type data is array(0 to instr_en'length-1) of unsigned(1 downto 0);
 ------------------------------------------------------------------------
@@ -60,7 +60,9 @@ begin
   div:  un_atom     port map(opList(2), opcode, state, sg_instr_en(2), instr_sel(2));
   jump: un_atom     port map(opList(3), opcode, state, sg_instr_en(3), instr_sel(3)); 
   addi: un_atom     port map(opList(4), opcode, state, sg_instr_en(4), instr_sel(4)); 
-  mov:  un_atom     port map(opList(5), opcode, state, sg_instr_en(5), instr_sel(5));
+  subi: un_atom     port map(opList(5), opcode, state, sg_instr_en(5), instr_sel(5));
+  mov:  un_atom     port map(opList(6), opcode, state, sg_instr_en(6), instr_sel(6));
+  divi: un_atom     port map(opList(7), opcode, state, sg_instr_en(7), instr_sel(7));
 
   FetDecEx <= state;
   instr_en <= sg_instr_en;
