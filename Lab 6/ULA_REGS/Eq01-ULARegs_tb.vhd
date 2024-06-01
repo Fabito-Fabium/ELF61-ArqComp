@@ -20,14 +20,14 @@ architecture testBench of ULARegs_tb is
 component ULARegs is
 port( 	clk, rst, wr_en, IorR:	in std_logic;
 	      A1, A2, A3:		          in unsigned (4 downto 0);
-	      op:	                		in std_logic_vector (5 downto 0);
+	      op:	                		in unsigned (5 downto 0);
 	      Cext:	              		in unsigned (15 downto 0)
 	);
 end component;
 
 signal 	clk, rst, wr_en, IorR:	std_logic			:='0';
 signal	A1, A2, A3:		          unsigned (4 downto 0)		:="00000";
-signal	op:			                std_logic_vector (5 downto 0) 	:="000000";
+signal	op:			                unsigned (5 downto 0) 	:="000000";
 signal 	Cext:			              unsigned (15 downto 0)		:=x"0000";
 ------------------------------------------------------------------------
 begin

@@ -51,8 +51,8 @@ begin
 	Bank:	RegFile port map(clk, rst, wr_en, A1, A2, A3, out_ULA, RD1, RD2);
 	ULA0:	ULA	port map(RD1, in_B, op, out_ULA, zero, LT);
 --mux:
-	in_B <= RD2	    when IorR='1' else
-		      Cext 	  when IorR='0' else
+	in_B <= RD2 	when IorR='0' else
+		      Cext 	when IorR='1' else
 		      x"0000";
 	
 end architecture;

@@ -15,7 +15,7 @@ use ieee.numeric_std.all;
 entity un_controle is
 port( 	clk, rst:	          in std_logic;
 	      instr:		          in unsigned(15 downto 0);
-	      instr_en:	          out unsigned(3 downto 0);
+	      instr_en:	          out unsigned(4 downto 0);
         FetDecEx:           out unsigned(1 downto 0)
 	);
 end entity;
@@ -40,7 +40,7 @@ architecture a_un_controle of un_controle is
 ------------------------------------------------------------------------  
   constant opList : List := (
 	  0  => "001110", 1  => "001101", 2  => "000010", 
-    3  => "000011",others => (others => '0')
+    3  => "000011", 4  => "110000", others => (others => '0')
   );
 ------------------------------------------------------------------------
   type data is array(0 to instr_en'length-1) of unsigned(1 downto 0);

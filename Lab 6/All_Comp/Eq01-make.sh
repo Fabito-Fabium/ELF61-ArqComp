@@ -42,7 +42,7 @@ echo "SEE $N_GTKW"
 ghdl --clean
 ghdl --remove
 if (( $N_GTKW > 0 )); then
-	gtkwave Eq01-"$main".gtkw
+	gtkwave Eq01-"$main".gtkw --rcvar 'fontname_signals Monospace 12' --rcvar 'fontname_waves Monospace 12'
 else
 	gtkwave Eq01-"$main".ghw
 fi

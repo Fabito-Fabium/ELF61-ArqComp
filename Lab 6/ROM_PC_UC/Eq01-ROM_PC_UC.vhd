@@ -24,7 +24,7 @@ architecture integration of ROM_PC_UC is
   component un_controle is
   port( 	clk, rst:	          in std_logic;
 	        instr:		          in unsigned(15 downto 0);
-	        instr_en:	          out unsigned(3 downto 0);
+	        instr_en:	          out unsigned(4 downto 0);
           FetDecEx:           out unsigned(1 downto 0)
 	);
   end component;
@@ -44,7 +44,7 @@ architecture integration of ROM_PC_UC is
   end component;
 ------------------------------------------------------------------------
   signal wr_en_pc, jump_en:     std_logic;
-  signal interm_en:             unsigned(3 downto 0):=(others => '0');
+  signal interm_en:             unsigned(4 downto 0):=(others => '0');
   signal FDEinterm:             unsigned(1 downto 0):=(others => '0');
   signal pcImm, pc_out: 		    unsigned(15 downto 0):=(others => '0');
   signal instrSgnl:			        unsigned(15 downto 0):=(others => '0');
