@@ -15,7 +15,7 @@ use ieee.numeric_std.all;
 entity ROM_PC_UC is
 port( 	clk, rst:		in std_logic:='0';
         FetDecEx:   out unsigned(1 downto 0);
-        instr_en:   out unsigned(6 downto 0):=(others => '0');
+        instr_en:   out unsigned(7 downto 0):=(others => '0');
         instr:      out unsigned(15 downto 0));
 end entity;
 ------------------------------------------------------------------------
@@ -54,8 +54,8 @@ begin
   pc:	  program_counter	port map(clk, rst, wr_en_pc, jump_en, pcImm, pc_out);
   r0m:	rom		          port map(clk, pc_out, instrSgnl);
   uctl:	un_controle	    port map(clk, rst, instrSgnl, interm_en, FDEinterm);
-
-  instr_en  <= interm_en(7 downto 4) & interm_en(2 downto 0);
+  
+  instr_en  <= interm_en;
   jump_en   <= interm_en(3);
 
   FetDecEx  <= FDEinterm;

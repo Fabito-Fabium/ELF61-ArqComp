@@ -32,18 +32,18 @@ architecture a_ram of RegFile is
 	signal conteudo_ram : mem:=(others => (others => '1'));
 ------------------------------------------------------------------------	
 begin
-	process(clk, rst, wr_en)
+    process(clk, rst, wr_en)
 	begin
     if rst = '1' then
       conteudo_ram <= (others => (others => '0'));
-		elsif wr_en='1' then
-			if rising_edge(clk) and A3 /= b"00000"  then
+		elsif wr_en = '1' then
+			if rising_edge(clk) and A3 /= "00000" then
 				conteudo_ram(to_integer(A3)) <= WD3; 
 		  end if;
 		end if;
-	end process;
-  RD1 <= conteudo_ram(to_integer(A1));
-  RD2 <= conteudo_ram(to_integer(A2));
+    RD1 <= conteudo_ram(to_integer(A1));
+    RD2 <= conteudo_ram(to_integer(A2));
+    end process;
 end architecture;
 
 -- FIM DO CODIGO

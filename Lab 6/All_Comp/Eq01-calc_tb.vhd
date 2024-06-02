@@ -28,7 +28,7 @@ begin
 	tb: 	calc port map(clk, rst);
 	
 	process begin
-    wait for 0.01 ns; --para inibir warnings do tipo numeric_std.to_integer
+    wait for 0.01 ns; -- para evitar warnings do tipo meta value detected
     clk <='1'; 	wait for 50 ns;
 		clk <='0'; 	wait for 50 ns;
 	end process;

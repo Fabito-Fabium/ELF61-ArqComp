@@ -1,15 +1,15 @@
 [*]
 [*] GTKWave Analyzer v3.3.118 (w)1999-2023 BSI
-[*] Fri May 31 16:04:31 2024
+[*] Sat Jun  1 15:37:57 2024
 [*]
 [dumpfile] "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ULA_REGS/Eq01-ULARegs.ghw"
-[dumpfile_mtime] "Fri May 31 16:03:57 2024"
-[dumpfile_size] 4758
+[dumpfile_mtime] "Sat Jun  1 15:37:38 2024"
+[dumpfile_size] 4704
 [savefile] "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/ULA_REGS/Eq01-ULARegs.gtkw"
 [timestart] 135000000
 [size] 1894 960
 [pos] -975 -1
-*-26.383474 460900000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-26.383474 250000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] top.
 [treeopen] top.ularegs_tb.
 [treeopen] top.ularegs_tb.tb.
@@ -42,5 +42,8 @@ top.ularegs_tb.tb.lt
 #{top.ularegs_tb.a2[2:0]} top.ularegs_tb.a2[2] top.ularegs_tb.a2[1] top.ularegs_tb.a2[0]
 @22
 #{top.ularegs_tb.tb.rd2[15:0]} top.ularegs_tb.tb.rd2[15] top.ularegs_tb.tb.rd2[14] top.ularegs_tb.tb.rd2[13] top.ularegs_tb.tb.rd2[12] top.ularegs_tb.tb.rd2[11] top.ularegs_tb.tb.rd2[10] top.ularegs_tb.tb.rd2[9] top.ularegs_tb.tb.rd2[8] top.ularegs_tb.tb.rd2[7] top.ularegs_tb.tb.rd2[6] top.ularegs_tb.tb.rd2[5] top.ularegs_tb.tb.rd2[4] top.ularegs_tb.tb.rd2[3] top.ularegs_tb.tb.rd2[2] top.ularegs_tb.tb.rd2[1] top.ularegs_tb.tb.rd2[0]
+#{top.ularegs_tb.tb.bank.conteudo_ram[6][15:0]} top.ularegs_tb.tb.bank.conteudo_ram[6][15] top.ularegs_tb.tb.bank.conteudo_ram[6][14] top.ularegs_tb.tb.bank.conteudo_ram[6][13] top.ularegs_tb.tb.bank.conteudo_ram[6][12] top.ularegs_tb.tb.bank.conteudo_ram[6][11] top.ularegs_tb.tb.bank.conteudo_ram[6][10] top.ularegs_tb.tb.bank.conteudo_ram[6][9] top.ularegs_tb.tb.bank.conteudo_ram[6][8] top.ularegs_tb.tb.bank.conteudo_ram[6][7] top.ularegs_tb.tb.bank.conteudo_ram[6][6] top.ularegs_tb.tb.bank.conteudo_ram[6][5] top.ularegs_tb.tb.bank.conteudo_ram[6][4] top.ularegs_tb.tb.bank.conteudo_ram[6][3] top.ularegs_tb.tb.bank.conteudo_ram[6][2] top.ularegs_tb.tb.bank.conteudo_ram[6][1] top.ularegs_tb.tb.bank.conteudo_ram[6][0]
+@23
+#{top.ularegs_tb.tb.bank.conteudo_ram[7][15:0]} top.ularegs_tb.tb.bank.conteudo_ram[7][15] top.ularegs_tb.tb.bank.conteudo_ram[7][14] top.ularegs_tb.tb.bank.conteudo_ram[7][13] top.ularegs_tb.tb.bank.conteudo_ram[7][12] top.ularegs_tb.tb.bank.conteudo_ram[7][11] top.ularegs_tb.tb.bank.conteudo_ram[7][10] top.ularegs_tb.tb.bank.conteudo_ram[7][9] top.ularegs_tb.tb.bank.conteudo_ram[7][8] top.ularegs_tb.tb.bank.conteudo_ram[7][7] top.ularegs_tb.tb.bank.conteudo_ram[7][6] top.ularegs_tb.tb.bank.conteudo_ram[7][5] top.ularegs_tb.tb.bank.conteudo_ram[7][4] top.ularegs_tb.tb.bank.conteudo_ram[7][3] top.ularegs_tb.tb.bank.conteudo_ram[7][2] top.ularegs_tb.tb.bank.conteudo_ram[7][1] top.ularegs_tb.tb.bank.conteudo_ram[7][0]
 [pattern_trace] 1
 [pattern_trace] 0

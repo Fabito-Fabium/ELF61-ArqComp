@@ -27,7 +27,7 @@ for %%f in (Eq01*.vhd) do (
 
 ghdl -e %main%_tb
 
-ghdl -r %main%_tb --stop-time=5000ns --wave=Eq01-%main%.ghw
+ghdl -r %main%_tb --stop-time=6000ns --wave=Eq01-%main%.ghw
 
 set count=0
 for %%x in (Eq01*.gtkw) do set /a count+=1

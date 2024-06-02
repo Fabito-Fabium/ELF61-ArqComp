@@ -24,10 +24,13 @@ architecture a_un_atom of un_atom is
 
 begin
 
-instr_en <= 	'1' when std_logic_vector(opcode) = std_logic_vector(op_rom) and FetDecEx = "10" else '0';
+instr_en <= 	'1' when  std_logic_vector(opcode) = std_logic_vector(op_rom) 
+                    and std_logic_vector(FetDecEx) = "10" else '0';
 
-instr_sel <=  "00" when std_logic_vector(opcode) = std_logic_vector(op_rom) and FetDecEx = "00" else
-              "01" when std_logic_vector(opcode) = std_logic_vector(op_rom) and FetDecEx = "01" else "11";              
+instr_sel <=  "00" when std_logic_vector(opcode) = std_logic_vector(op_rom) 
+                    and std_logic_vector(FetDecEx) = "00" else
+              "01" when std_logic_vector(opcode) = std_logic_vector(op_rom)
+                    and std_logic_vector(FetDecEx) = "01" else "11";              
 
 end architecture;
 

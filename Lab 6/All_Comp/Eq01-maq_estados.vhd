@@ -23,16 +23,23 @@ architecture change_state of maq_estados is
   signal state_s:	unsigned(1 downto 0):="00";
 ------------------------------------------------------------------------
 begin
-
+--inclui o state_s na lista sens. p/ alinhar os sinais com os estados
 process(clk, rst, state_s)
   begin
 	  if rst='1' then
 		  state <= "00";
-	  elsif rising_edge(clk) then -- fazendo assim so para treinar
-		  state_s <= (state_s(0)) & (state_s(1) xnor state_s(0));
-	  end if;
-	  state <= state_s;
-end process;
+	  elsif rising_edge(clk) then 
+      -- tentando "corrigir" o execute q ocorre em falling_edge
+        state_s <= (state_s+1) mod 3;
+--		  state_s <= (state_s(0)) & (state_s(1) xnor state_s(0));
+--      if state_s = "10" then
+--        state_s <= "00";
+--      else
+--        state_s <= state_s + 1;
+--      end if;
+      state <= state_s;
+    end if;
+  end process;
 
 end architecture;
 

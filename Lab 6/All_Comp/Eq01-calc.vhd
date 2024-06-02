@@ -20,13 +20,13 @@ architecture calculate of calc is
 ------------------------------------------------------------------------
   type List is array(0 to 3) of unsigned(5 downto 0);
   constant opImmList: List :=(
-    0  => "110000", 1 => "110011", 2 => "000010", others => (others => '0') 
+     0  => "110000", 1 => "110011", 2 => "000010", others => (others => '0') 
   );
 ------------------------------------------------------------------------
   component ROM_PC_UC is
-  port( 	clk, rst:		in std_logic:='0';
+  port( 	clk, rst:		in std_logic;
           FetDecEx:   out unsigned(1 downto 0);
-          instr_en:   out unsigned(6 downto 0);
+          instr_en:   out unsigned(7 downto 0);
           instr:      out unsigned(15 downto 0));
   end component;
 ------------------------------------------------------------------------
@@ -38,7 +38,7 @@ architecture calculate of calc is
   end component;
 ------------------------------------------------------------------------
   signal FetDecEx:      unsigned(1 downto 0);
-  signal instr_en:      unsigned(6 downto 0):=(others => '0');
+  signal instr_en:      unsigned(7 downto 0):=(others => '0');
   signal instr, Cext:   unsigned(15 downto 0):=(others => '0');
 
   signal ULA_en, IorR:  std_logic;
@@ -49,31 +49,33 @@ begin
   
   pcall:  ROM_PC_UC port map(clk, rst, FetDecEx, instr_en, instr);
   ulaRg:  ULARegs   port map(clk, rst, ULA_en, IorR, A1, A2, A3, op, Cext);
-  
-  ULA_en  <= instr_en(0) or instr_en(1) or instr_en(2) or instr_en(3) 
-             or instr_en(4) or instr_en(5) or instr_en(6);
+  --todos menos a instrucao (3), jmp, utilizam a ULARegs
+  ULA_en <= '1' when std_logic_vector(FetDecEx) = "10" 
+                   and instr_en(3) /= '1' else '0'; 
 
   IorR    <= '1'when op = opImmList(0) 
                   or op = opImmList(1)
                   or op = opImmList(2)
                   else '0';
-  
+  --sabendo que nessa arquitetura, a3 = instr(15::11) = a1 e (add a3, a1, a2):=(a3 <= a1 + a2)
+  --decidimos codificar o mov entre reg como um add onde a3 /= a1 = a0 = 0, resultando em:
+  --(add a3, a0, a2) <=> (a3 <= a0 + a2) <=> (a3 <= 0 + a2) => (a3 <= a2) => (mov a3, a2)
+  -- por isso, temos a condicao op/=0 em A1
   A1 <= instr(15 downto 11)   when (std_logic_vector(FetDecEx) = "01" 
-                                or std_logic_vector(FetDecEx) = "10")
-                              and (std_logic_vector(op) /= "000000")
+                                  or std_logic_vector(FetDecEx) = "10") and (op /= 0)
                               else (others => '0');
   A2 <= instr(4 downto 0)     when  std_logic_vector(FetDecEx) = "01" 
                                   or std_logic_vector(FetDecEx) = "10"
                               else (others => '0');
   A3 <= instr(15 downto 11)   when std_logic_vector(FetDecEx) = "01" 
-                                or std_logic_vector(FetDecEx) = "10" 
+                                  or std_logic_vector(FetDecEx) = "10" 
                               else (others => '0'); --referente a arquitetura. 
   op <= instr(10 downto 5)    when std_logic_vector(FetDecEx) = "01" 
-                                or std_logic_vector(FetDecEx) = "10"
+                                  or std_logic_vector(FetDecEx) = "10"
                               else (others => '0');
   
-  Cext <= x"00" & "000" & instr(4 downto 0);
-
+  Cext <= resize(instr(4 downto 0), Cext'length) when std_logic_vector(FetDecEx) /= "00" 
+          else (others => '0');
 
 end architecture;
 

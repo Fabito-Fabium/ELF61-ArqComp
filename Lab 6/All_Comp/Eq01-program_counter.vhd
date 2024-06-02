@@ -40,9 +40,9 @@ begin
 
   count: reg16bits port map(clk, rst, wr_en, dt_in, dt_out);
 
-  dt_in <=	pcImm   when jump = '1' else 
-		        x"0000"	when rst = '1' else
-		        dt_out + x"0001";
+  dt_in <=	pcImm           when jump = '1' else 
+           (others => '0')	when rst = '1' else
+		        dt_out + 1;
 
   pc_out <= dt_out;
 

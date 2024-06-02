@@ -46,7 +46,7 @@ begin
 	process begin
 		wait for 200 ns;
     op  <= "001110";
-    A3 	<= "00110"; 	wait for 25 ns;
+    A3 	<= "00110";
 		Cext 	<= to_unsigned(16#008263#, Cext'length);
 		wr_en 	<= '1'; 	wait for 75 ns;
 		wr_en 	<= '0';

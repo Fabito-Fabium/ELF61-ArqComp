@@ -36,9 +36,8 @@ begin
 			  rgst <= data_in;
 		  end if;
 	  end if;
+    data_out <= rgst;
   end process;
-
-  data_out <= rgst;
 
 end architecture;
 
