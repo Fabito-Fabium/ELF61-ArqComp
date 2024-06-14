@@ -25,24 +25,18 @@ end entity;
 ------------------------------------------------------------------------
 architecture a_rom of rom is
 ------------------------------------------------------------------------
-	type mem is array (0 to 127) of unsigned(15 downto 0);
+	type mem is array (0 to 128) of unsigned(15 downto 0);
   constant conteudo_rom : mem := (
-    -- 0 => (others => '0') p/ diminuir as confusoes ao vizualizar os dados no gtkw;
-    -- E os comandos em assembly estao no formato usual, e.g:
-    -- ((sub r1, r2) <=> (r1 <= r1 - r2)) ; ((mov r10, r9) <=> (r10 <= r9))
-    -- para facilitar a leitura. (a Renesas inverte a ordem dos registradores)
-    1  => b"01000_110000_00100", --110000; ADDI R8 , 4;   (foi utilizado addi por simplicidade)
-    2  => b"01001_110000_00110", --110000; ADDI R9 , 6; 
-    3  => b"01010_000000_01001", --000000; MOV  R10, R9;  (ADD R10, R8, R9 é uma pseudo-instr.)
-    4  => b"01010_001110_01000", --001110; ADD  R10, R8;
-    5  => b"01010_110011_00010", --110011; SUBI R10, 2;
-    6  => b"00000_000011_01111", --000011; JMP  15 ;      PC <= 15; 
-	  15 => b"01000_000000_01010", --000000; MOV  R8 , R10;
-    16 => b"01010_000010_00011", --000010; DIVI R10, R3;
-    17 => b"01011_000000_01010", --000000; MOV  R11, R10;
-	  18 => b"00000_000011_00011", --000011; JMP  3;
-    19 => b"00000_000000_00000", --000000; NOP (MOV R0, 0)
-    20 => b"00000_000000_00000", --000000; NOP
+  --sejam duas constantes C1 e C2 (o valor nos 5 LSb de 1 e 2), entao
+    1  => b"00100_110000_00110", --ADDI R4, C1;
+    2  => b"00101_110000_01111", --ADDI R5, C2;
+  --pseudo-cod para MUL R1, R4, R5
+    3  => b"00001_000000_00101", --MOV R1, R5
+    4  => b"00001_010001_00100", --MUL R1, R4
+  --soma:
+    5  => b"00010_001110_00101", --R2 <= R2 + R5;
+    6  => b"00010_001010_11110", --BNE R2, soma;
+    7  => b"00000_000011_00111", --JMP 7; (loop infinito)
     others => (others=>'0')
   );
 ------------------------------------------------------------------------

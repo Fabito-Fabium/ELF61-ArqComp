@@ -1,0 +1,8 @@
+-- INSTRUÇÕES UTILIZADAS NO LABORATÓRIO 6 (EQUIPE 01):
+
+ADDI: rrrrr110000iiiii (onde r = registrador 1 [de destino] e i = valor imediato)  -> ADDI r, i -> [r <- r + i]
+ADD : rrrrr001110RRRRR (onde r = registrador 1 [de destino] e R = registrador 2)   -> ADD r, R -> [r <- r + R]
+SUBI: rrrrr110011iiiii (onde r = registrador 1 [de destino] e i = valor imediato)  -> SUBI r, i -> [r <- r - i]
+JMP:  iiiii000011iiiii (onde i = valor imediato)                                   -> JMP i -> [PC <- i]
+MOV:  rrrrr000000RRRRR (onde r = registrador 1 [de destino] e R = registrador 2)   -> MOV r, R [r <- R]
+DIVI: rrrrr000010iiiii (onde r = registrador 1 [de destino] e i = valor imediato)  -> DIVI r, i [r <- r / i]

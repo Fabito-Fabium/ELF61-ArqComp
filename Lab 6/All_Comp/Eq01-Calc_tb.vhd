@@ -13,12 +13,12 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity calc_tb is
+entity Calc_tb is
 end entity;
 
-architecture Run_tb of calc_tb is
+architecture Run_tb of Calc_tb is
 
-component calc is
+component Calc is
 port( 	clk, rst:		in std_logic);
 end component;
 

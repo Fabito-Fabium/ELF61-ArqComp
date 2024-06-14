@@ -1,0 +1,67 @@
+[*]
+[*] GTKWave Analyzer v3.3.118 (w)1999-2023 BSI
+[*] Sun Jun  2 23:48:35 2024
+[*]
+[dumpfile] "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/All_Comp/Eq01-Calc.ghw"
+[dumpfile_mtime] "Sun Jun  2 23:40:57 2024"
+[dumpfile_size] 9711
+[savefile] "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 6/All_Comp/Eq01-Calc.gtkw"
+[timestart] 0
+[size] 1894 960
+[pos] -975 -1
+*-29.034069 703000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.calc_tb.
+[treeopen] top.calc_tb.tb.
+[treeopen] top.calc_tb.tb.pcall.
+[treeopen] top.calc_tb.tb.pcall.uctl.
+[treeopen] top.calc_tb.tb.ularg.
+[treeopen] top.calc_tb.tb.ularg.ula0.
+[sst_width] 269
+[signals_width] 250
+[sst_expanded] 1
+[sst_vpaned_height] 283
+@28
+top.calc_tb.rst
+top.calc_tb.clk
+@c00028
++{estado} #{top.calc_tb.tb.fetdecex[1:0]} top.calc_tb.tb.fetdecex[1] top.calc_tb.tb.fetdecex[0]
+@28
+top.calc_tb.tb.fetdecex[1]
+top.calc_tb.tb.fetdecex[0]
+@1401200
+-group_end
+@25
++{pc} #{top.calc_tb.tb.pcall.pc_out[15:0]} top.calc_tb.tb.pcall.pc_out[15] top.calc_tb.tb.pcall.pc_out[14] top.calc_tb.tb.pcall.pc_out[13] top.calc_tb.tb.pcall.pc_out[12] top.calc_tb.tb.pcall.pc_out[11] top.calc_tb.tb.pcall.pc_out[10] top.calc_tb.tb.pcall.pc_out[9] top.calc_tb.tb.pcall.pc_out[8] top.calc_tb.tb.pcall.pc_out[7] top.calc_tb.tb.pcall.pc_out[6] top.calc_tb.tb.pcall.pc_out[5] top.calc_tb.tb.pcall.pc_out[4] top.calc_tb.tb.pcall.pc_out[3] top.calc_tb.tb.pcall.pc_out[2] top.calc_tb.tb.pcall.pc_out[1] top.calc_tb.tb.pcall.pc_out[0]
+@22
++{instr} #{top.calc_tb.tb.pcall.instr[15:0]} top.calc_tb.tb.pcall.instr[15] top.calc_tb.tb.pcall.instr[14] top.calc_tb.tb.pcall.instr[13] top.calc_tb.tb.pcall.instr[12] top.calc_tb.tb.pcall.instr[11] top.calc_tb.tb.pcall.instr[10] top.calc_tb.tb.pcall.instr[9] top.calc_tb.tb.pcall.instr[8] top.calc_tb.tb.pcall.instr[7] top.calc_tb.tb.pcall.instr[6] top.calc_tb.tb.pcall.instr[5] top.calc_tb.tb.pcall.instr[4] top.calc_tb.tb.pcall.instr[3] top.calc_tb.tb.pcall.instr[2] top.calc_tb.tb.pcall.instr[1] top.calc_tb.tb.pcall.instr[0]
+@c00024
++{in_a} #{top.calc_tb.tb.ularg.ula0.in_a[15:0]} top.calc_tb.tb.ularg.ula0.in_a[15] top.calc_tb.tb.ularg.ula0.in_a[14] top.calc_tb.tb.ularg.ula0.in_a[13] top.calc_tb.tb.ularg.ula0.in_a[12] top.calc_tb.tb.ularg.ula0.in_a[11] top.calc_tb.tb.ularg.ula0.in_a[10] top.calc_tb.tb.ularg.ula0.in_a[9] top.calc_tb.tb.ularg.ula0.in_a[8] top.calc_tb.tb.ularg.ula0.in_a[7] top.calc_tb.tb.ularg.ula0.in_a[6] top.calc_tb.tb.ularg.ula0.in_a[5] top.calc_tb.tb.ularg.ula0.in_a[4] top.calc_tb.tb.ularg.ula0.in_a[3] top.calc_tb.tb.ularg.ula0.in_a[2] top.calc_tb.tb.ularg.ula0.in_a[1] top.calc_tb.tb.ularg.ula0.in_a[0]
+@28
+top.calc_tb.tb.ularg.ula0.in_a[15]
+top.calc_tb.tb.ularg.ula0.in_a[14]
+top.calc_tb.tb.ularg.ula0.in_a[13]
+top.calc_tb.tb.ularg.ula0.in_a[12]
+top.calc_tb.tb.ularg.ula0.in_a[11]
+top.calc_tb.tb.ularg.ula0.in_a[10]
+top.calc_tb.tb.ularg.ula0.in_a[9]
+top.calc_tb.tb.ularg.ula0.in_a[8]
+top.calc_tb.tb.ularg.ula0.in_a[7]
+top.calc_tb.tb.ularg.ula0.in_a[6]
+top.calc_tb.tb.ularg.ula0.in_a[5]
+top.calc_tb.tb.ularg.ula0.in_a[4]
+top.calc_tb.tb.ularg.ula0.in_a[3]
+top.calc_tb.tb.ularg.ula0.in_a[2]
+top.calc_tb.tb.ularg.ula0.in_a[1]
+top.calc_tb.tb.ularg.ula0.in_a[0]
+@1401200
+-group_end
+@24
++{in_b} #{top.calc_tb.tb.ularg.ula0.in_b[15:0]} top.calc_tb.tb.ularg.ula0.in_b[15] top.calc_tb.tb.ularg.ula0.in_b[14] top.calc_tb.tb.ularg.ula0.in_b[13] top.calc_tb.tb.ularg.ula0.in_b[12] top.calc_tb.tb.ularg.ula0.in_b[11] top.calc_tb.tb.ularg.ula0.in_b[10] top.calc_tb.tb.ularg.ula0.in_b[9] top.calc_tb.tb.ularg.ula0.in_b[8] top.calc_tb.tb.ularg.ula0.in_b[7] top.calc_tb.tb.ularg.ula0.in_b[6] top.calc_tb.tb.ularg.ula0.in_b[5] top.calc_tb.tb.ularg.ula0.in_b[4] top.calc_tb.tb.ularg.ula0.in_b[3] top.calc_tb.tb.ularg.ula0.in_b[2] top.calc_tb.tb.ularg.ula0.in_b[1] top.calc_tb.tb.ularg.ula0.in_b[0]
++{out_ula} #{top.calc_tb.tb.ularg.out_ula[15:0]} top.calc_tb.tb.ularg.out_ula[15] top.calc_tb.tb.ularg.out_ula[14] top.calc_tb.tb.ularg.out_ula[13] top.calc_tb.tb.ularg.out_ula[12] top.calc_tb.tb.ularg.out_ula[11] top.calc_tb.tb.ularg.out_ula[10] top.calc_tb.tb.ularg.out_ula[9] top.calc_tb.tb.ularg.out_ula[8] top.calc_tb.tb.ularg.out_ula[7] top.calc_tb.tb.ularg.out_ula[6] top.calc_tb.tb.ularg.out_ula[5] top.calc_tb.tb.ularg.out_ula[4] top.calc_tb.tb.ularg.out_ula[3] top.calc_tb.tb.ularg.out_ula[2] top.calc_tb.tb.ularg.out_ula[1] top.calc_tb.tb.ularg.out_ula[0]
++{R8} #{top.calc_tb.tb.ularg.bank.conteudo_ram[8][15:0]} top.calc_tb.tb.ularg.bank.conteudo_ram[8][15] top.calc_tb.tb.ularg.bank.conteudo_ram[8][14] top.calc_tb.tb.ularg.bank.conteudo_ram[8][13] top.calc_tb.tb.ularg.bank.conteudo_ram[8][12] top.calc_tb.tb.ularg.bank.conteudo_ram[8][11] top.calc_tb.tb.ularg.bank.conteudo_ram[8][10] top.calc_tb.tb.ularg.bank.conteudo_ram[8][9] top.calc_tb.tb.ularg.bank.conteudo_ram[8][8] top.calc_tb.tb.ularg.bank.conteudo_ram[8][7] top.calc_tb.tb.ularg.bank.conteudo_ram[8][6] top.calc_tb.tb.ularg.bank.conteudo_ram[8][5] top.calc_tb.tb.ularg.bank.conteudo_ram[8][4] top.calc_tb.tb.ularg.bank.conteudo_ram[8][3] top.calc_tb.tb.ularg.bank.conteudo_ram[8][2] top.calc_tb.tb.ularg.bank.conteudo_ram[8][1] top.calc_tb.tb.ularg.bank.conteudo_ram[8][0]
++{R9} #{top.calc_tb.tb.ularg.bank.conteudo_ram[9][15:0]} top.calc_tb.tb.ularg.bank.conteudo_ram[9][15] top.calc_tb.tb.ularg.bank.conteudo_ram[9][14] top.calc_tb.tb.ularg.bank.conteudo_ram[9][13] top.calc_tb.tb.ularg.bank.conteudo_ram[9][12] top.calc_tb.tb.ularg.bank.conteudo_ram[9][11] top.calc_tb.tb.ularg.bank.conteudo_ram[9][10] top.calc_tb.tb.ularg.bank.conteudo_ram[9][9] top.calc_tb.tb.ularg.bank.conteudo_ram[9][8] top.calc_tb.tb.ularg.bank.conteudo_ram[9][7] top.calc_tb.tb.ularg.bank.conteudo_ram[9][6] top.calc_tb.tb.ularg.bank.conteudo_ram[9][5] top.calc_tb.tb.ularg.bank.conteudo_ram[9][4] top.calc_tb.tb.ularg.bank.conteudo_ram[9][3] top.calc_tb.tb.ularg.bank.conteudo_ram[9][2] top.calc_tb.tb.ularg.bank.conteudo_ram[9][1] top.calc_tb.tb.ularg.bank.conteudo_ram[9][0]
++{R10} #{top.calc_tb.tb.ularg.bank.conteudo_ram[10][15:0]} top.calc_tb.tb.ularg.bank.conteudo_ram[10][15] top.calc_tb.tb.ularg.bank.conteudo_ram[10][14] top.calc_tb.tb.ularg.bank.conteudo_ram[10][13] top.calc_tb.tb.ularg.bank.conteudo_ram[10][12] top.calc_tb.tb.ularg.bank.conteudo_ram[10][11] top.calc_tb.tb.ularg.bank.conteudo_ram[10][10] top.calc_tb.tb.ularg.bank.conteudo_ram[10][9] top.calc_tb.tb.ularg.bank.conteudo_ram[10][8] top.calc_tb.tb.ularg.bank.conteudo_ram[10][7] top.calc_tb.tb.ularg.bank.conteudo_ram[10][6] top.calc_tb.tb.ularg.bank.conteudo_ram[10][5] top.calc_tb.tb.ularg.bank.conteudo_ram[10][4] top.calc_tb.tb.ularg.bank.conteudo_ram[10][3] top.calc_tb.tb.ularg.bank.conteudo_ram[10][2] top.calc_tb.tb.ularg.bank.conteudo_ram[10][1] top.calc_tb.tb.ularg.bank.conteudo_ram[10][0]
++{R11} #{top.calc_tb.tb.ularg.bank.conteudo_ram[11][15:0]} top.calc_tb.tb.ularg.bank.conteudo_ram[11][15] top.calc_tb.tb.ularg.bank.conteudo_ram[11][14] top.calc_tb.tb.ularg.bank.conteudo_ram[11][13] top.calc_tb.tb.ularg.bank.conteudo_ram[11][12] top.calc_tb.tb.ularg.bank.conteudo_ram[11][11] top.calc_tb.tb.ularg.bank.conteudo_ram[11][10] top.calc_tb.tb.ularg.bank.conteudo_ram[11][9] top.calc_tb.tb.ularg.bank.conteudo_ram[11][8] top.calc_tb.tb.ularg.bank.conteudo_ram[11][7] top.calc_tb.tb.ularg.bank.conteudo_ram[11][6] top.calc_tb.tb.ularg.bank.conteudo_ram[11][5] top.calc_tb.tb.ularg.bank.conteudo_ram[11][4] top.calc_tb.tb.ularg.bank.conteudo_ram[11][3] top.calc_tb.tb.ularg.bank.conteudo_ram[11][2] top.calc_tb.tb.ularg.bank.conteudo_ram[11][1] top.calc_tb.tb.ularg.bank.conteudo_ram[11][0]
+[pattern_trace] 1
+[pattern_trace] 0

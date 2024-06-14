@@ -34,8 +34,9 @@ begin
 
 	inter_out <=   	
       in_A + in_B 				when  op="001110" or op="110000" or op="000000" else
-      in_A - in_B 				when  op="001101" or op="110011"  else
-			in_A / in_B  				when (op="111111" or op="000010" ) and (in_B /= x"0000") else
+      in_A - in_B 				when  op="001101" or op="110011" or op="001010"else
+			in_A / in_B  				when (op="111111" or op="001011" ) and (in_B /= x"0000") else
+      resize(in_A * in_B,inter_out'length) when op="010001" else
 			"0000000000000000";
   out_ULA		<= inter_out when std_logic_vector(FetDecEx) /= "01" else (others => '0') ;
 			

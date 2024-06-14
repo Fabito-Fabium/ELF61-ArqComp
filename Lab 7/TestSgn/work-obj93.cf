@@ -1,0 +1,4 @@
+v 4
+file . "test.vhd" "59bb9bdddd99f82035f0a89b03919e8ec3e84ec5" "20240611115627.001":
+  entity test at 1( 0) + 0 on 39;
+  architecture smt of test at 9( 171) + 0 on 40;

@@ -18,8 +18,8 @@ port( 	clk, rst, wr_en, IorR:	in std_logic;
         FetDecEx:               in unsigned (1 downto 0);
 	      A1, A2, A3:		          in unsigned (4 downto 0);
 	      op:			                in unsigned (5 downto 0);
-	      Cext:			              in unsigned (15 downto 0)
-	);
+	      Cext:			              in unsigned (15 downto 0);
+        flgZ, flgLT:            out std_logic);
 end entity;
 ------------------------------------------------------------------------
 architecture op_ULARegs of ULARegs is
@@ -46,12 +46,11 @@ architecture op_ULARegs of ULARegs is
   end component;
 ------------------------------------------------------------------------
   signal out_ULA, RD1, RD2, in_B:	unsigned (15 downto 0);
-  signal zero, LT:		            std_logic;
 ------------------------------------------------------------------------
 begin
 
 	Bank:	RegFile port map(clk, rst, wr_en, A1, A2, A3, out_ULA, RD1, RD2);
-	ULA0:	ULA	port map(RD1, in_B, op, FetDecEx, out_ULA, zero, LT);
+	ULA0:	ULA	port map(RD1, in_B, op, FetDecEx, out_ULA, flgZ, flgLT);
 --mux:
 	in_B <= RD2 	when IorR='0' else
 		      Cext 	when IorR='1' else

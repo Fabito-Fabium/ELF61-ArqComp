@@ -12,46 +12,57 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 ------------------------------------------------------------------------
-entity calc is
+entity DesvCond is
 port( 	clk, rst:		in std_logic);
 end entity;
 ------------------------------------------------------------------------
-architecture calculate of calc is
+architecture calculate of DesvCond is
 ------------------------------------------------------------------------
   type List is array(0 to 3) of unsigned(5 downto 0);
   constant opImmList: List :=(
-     0  => "110000", 1 => "110011", 2 => "000010", others => (others => '0') 
+    0  => "110000", 1 => "110011", 2 => "001011", others => (others => '0') 
   );
+  constant opBncList: List :=(
+    0  => "001010", others => (others => '0')
+);
 ------------------------------------------------------------------------
   component ROM_PC_UC is
   port( 	clk, rst:		in std_logic;
+          bnch_en:    in std_logic;
           FetDecEx:   out unsigned(1 downto 0);
-          instr_en:   out unsigned(7 downto 0);
+          instr_en:   out unsigned(9 downto 0);
           instr:      out unsigned(15 downto 0));
   end component;
 ------------------------------------------------------------------------
   component ULARegs is
   port( 	clk, rst, wr_en, IorR:	in std_logic;
+          FetDecEx:               in unsigned (1 downto 0);
 	        A1, A2, A3:		          in unsigned (4 downto 0);
 	        op:			                in unsigned (5 downto 0);
-	        Cext:			              in unsigned (15 downto 0));
+	        Cext:			              in unsigned (15 downto 0);
+          flgZ, flgLT:            out std_logic);
   end component;
 ------------------------------------------------------------------------
   signal FetDecEx:      unsigned(1 downto 0);
-  signal instr_en:      unsigned(7 downto 0):=(others => '0');
+  signal instr_en:      unsigned(9 downto 0):=(others => '0');
   signal instr, Cext:   unsigned(15 downto 0):=(others => '0');
 
   signal ULA_en, IorR:  std_logic;
   signal A1, A2, A3:    unsigned(4 downto 0):=(others => '0');
   signal op:            unsigned(5 downto 0):=(others => '0');
+  signal bnch_en:       std_logic:='0';
+  signal flgZ, flgLT:   std_logic:='0';
 ------------------------------------------------------------------------
 begin
   
-  pcall:  ROM_PC_UC port map(clk, rst, FetDecEx, instr_en, instr);
-  ulaRg:  ULARegs   port map(clk, rst, ULA_en, IorR, A1, A2, A3, op, Cext);
+  pcall:  ROM_PC_UC port map(clk, rst, bnch_en, FetDecEx, instr_en, instr);
+  ulaRg:  ULARegs   port map(clk, rst, ULA_en, IorR, FetDecEx, 
+                    A1, A2, A3, op, Cext, flgZ, flgLT);
   --todos menos a instrucao (3), jmp, utilizam a ULARegs
   ULA_en <= '1' when std_logic_vector(FetDecEx) = "10" 
-                   and instr_en(3) /= '1' else '0'; 
+                   and instr_en(3) /= '1'
+                   and instr_en(9) /= '1' 
+                   else '0'; 
 
   IorR    <= '1'when op = opImmList(0) 
                   or op = opImmList(1)
@@ -64,18 +75,24 @@ begin
   A1 <= instr(15 downto 11)   when (std_logic_vector(FetDecEx) = "01" 
                                   or std_logic_vector(FetDecEx) = "10") and (op /= 0)
                               else (others => '0');
-  A2 <= instr(4 downto 0)     when  std_logic_vector(FetDecEx) = "01" 
-                                  or std_logic_vector(FetDecEx) = "10"
+
+  A2 <= instr(4 downto 0)     when  (std_logic_vector(FetDecEx) = "01" 
+                                 or std_logic_vector(FetDecEx) = "10") and (op /= opBncList(0)) else
+        "00001"               when (op = opBncList(0))
                               else (others => '0');
+
   A3 <= instr(15 downto 11)   when std_logic_vector(FetDecEx) = "01" 
                                   or std_logic_vector(FetDecEx) = "10" 
                               else (others => '0'); --referente a arquitetura. 
+  
   op <= instr(10 downto 5)    when std_logic_vector(FetDecEx) = "01" 
                                   or std_logic_vector(FetDecEx) = "10"
                               else (others => '0');
   
   Cext <= resize(instr(4 downto 0), Cext'length) when std_logic_vector(FetDecEx) /= "00" 
           else (others => '0');
-
+  
+  bnch_en <= '1' when op = opBncList(0) and flgZ /= '1'
+              else '0';
 end architecture;
 
