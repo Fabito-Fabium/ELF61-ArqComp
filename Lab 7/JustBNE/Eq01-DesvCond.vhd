@@ -23,14 +23,14 @@ architecture calculate of DesvCond is
     0  => "110000", 1 => "110011", 2 => "001011", others => (others => '0') 
   );
   constant opBncList: List :=(
-    0  => "001010", others => (others => '0')
-);
+    0  => "001010", 1 => "000010", others => (others => '0')
+  );
 ------------------------------------------------------------------------
   component ROM_PC_UC is
   port( 	clk, rst:		in std_logic;
           bnch_en:    in std_logic;
           FetDecEx:   out unsigned(1 downto 0);
-          instr_en:   out unsigned(9 downto 0);
+          instr_en:   out unsigned(10 downto 0);
           instr:      out unsigned(15 downto 0));
   end component;
 ------------------------------------------------------------------------
@@ -44,7 +44,7 @@ architecture calculate of DesvCond is
   end component;
 ------------------------------------------------------------------------
   signal FetDecEx:      unsigned(1 downto 0);
-  signal instr_en:      unsigned(9 downto 0):=(others => '0');
+  signal instr_en:      unsigned(10 downto 0):=(others => '0');
   signal instr, Cext:   unsigned(15 downto 0):=(others => '0');
 
   signal ULA_en, IorR:  std_logic;
@@ -60,8 +60,9 @@ begin
                     A1, A2, A3, op, Cext, flgZ, flgLT);
   --todos menos a instrucao (3), jmp, utilizam a ULARegs
   ULA_en <= '1' when std_logic_vector(FetDecEx) = "10" 
-                   and instr_en(3) /= '1'
-                   and instr_en(9) /= '1' 
+                   and instr_en(3)  /= '1'
+                   and instr_en(9)  /= '1'
+                   and instr_en(10) /= '1'
                    else '0'; 
 
   IorR    <= '1'when op = opImmList(0) 
@@ -92,7 +93,9 @@ begin
   Cext <= resize(instr(4 downto 0), Cext'length) when std_logic_vector(FetDecEx) /= "00" 
           else (others => '0');
   
-  bnch_en <= '1' when op = opBncList(0) and flgZ /= '1'
-              else '0';
+  bnch_en <= '1' when (op = opBncList(0) and flgZ /= '1') 
+                  or  (op = opBncList(1) and flgZ  = '1')
+             else '0';
+
 end architecture;
 

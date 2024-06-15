@@ -15,7 +15,7 @@ use ieee.numeric_std.all;
 entity un_controle is
 port( 	clk, rst:	          in std_logic;
 	      instr:		          in unsigned(15 downto 0);
-	      instr_en:	          out unsigned(9 downto 0);
+	      instr_en:	          out unsigned(10 downto 0);
         FetDecEx:           out unsigned(1 downto 0)
 	);
 end entity;
@@ -42,7 +42,7 @@ architecture a_un_controle of un_controle is
 	  0  => "001110", 1  => "001101", 2  => "111111", 
     3  => "000011", 4  => "110000", 5  => "110011", 
     6  => "000000", 7  => "001011", 8  => "010001", 
-    9  => "001010",
+    9  => "001010", 10 => "000010",
     others => (others => '0'));
 ------------------------------------------------------------------------
   type data is array(0 to instr_en'length-1) of unsigned(1 downto 0);
@@ -60,13 +60,14 @@ begin
   add:  un_atom     port map(opList(0), opcode, state, sg_instr_en(0), instr_sel(0));
   sub:  un_atom     port map(opList(1), opcode, state, sg_instr_en(1), instr_sel(1));
   div:  un_atom     port map(opList(2), opcode, state, sg_instr_en(2), instr_sel(2));
-  jump: un_atom     port map(opList(3), opcode, state, sg_instr_en(3), instr_sel(3)); 
+  jmp:  un_atom     port map(opList(3), opcode, state, sg_instr_en(3), instr_sel(3)); 
   addi: un_atom     port map(opList(4), opcode, state, sg_instr_en(4), instr_sel(4)); 
   subi: un_atom     port map(opList(5), opcode, state, sg_instr_en(5), instr_sel(5));
   mov:  un_atom     port map(opList(6), opcode, state, sg_instr_en(6), instr_sel(6));
   divi: un_atom     port map(opList(7), opcode, state, sg_instr_en(7), instr_sel(7));
   mul:  un_atom     port map(opList(8), opcode, state, sg_instr_en(8), instr_sel(8));
   bne:  un_atom     port map(opList(9), opcode, state, sg_instr_en(9), instr_sel(9));
+  beq:  un_atom     port map(opList(10), opcode, state, sg_instr_en(10), instr_sel(10));
 
   FetDecEx <= state;
   instr_en <= sg_instr_en;
