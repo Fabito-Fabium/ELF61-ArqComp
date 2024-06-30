@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Sun Jun 30 16:20:19 2024
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Revision Name : Lab08_FPGA
+Top-level Entity Name : toplevel
+Family : MAX 10
+Total logic elements : 1,421
+    Total combinational functions : 1,186
+    Dedicated logic registers : 324
+Total registers : 324
+Total pins : 52
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 2
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0
