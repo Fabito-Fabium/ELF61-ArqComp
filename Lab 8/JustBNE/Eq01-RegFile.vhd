@@ -22,7 +22,9 @@ entity RegFile is
 		wr_en :       in std_logic;
 		A1, A2, A3 :  in unsigned(4 downto 0);
     WD3:          in unsigned(15 downto 0);
-		RD1, RD2 :    out unsigned(15 downto 0)
+		RD1, RD2 :    out unsigned(15 downto 0);
+    debug_reg:    in unsigned(4 downto 0);
+    debug_val:    out unsigned (15 downto 0)
 	);
 end entity;
 ------------------------------------------------------------------------
@@ -44,6 +46,7 @@ begin
 		end if;
     RD1 <= conteudo_ram(to_integer(A1));
     RD2 <= conteudo_ram(to_integer(A2));
+    debug_val <= conteudo_ram(to_integer(debug_reg));
     end process;
 end architecture;
 

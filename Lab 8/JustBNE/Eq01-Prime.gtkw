@@ -1,0 +1,31 @@
+[*]
+[*] GTKWave Analyzer v3.3.118 (w)1999-2023 BSI
+[*] Sat Jun 29 23:59:26 2024
+[*]
+[dumpfile] "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 8/JustBNE/Eq01-Prime.ghw"
+[dumpfile_mtime] "Sat Jun 29 23:59:10 2024"
+[dumpfile_size] 91019
+[savefile] "/home/lilpc/Documents/Git/ELF61 - Arq Comp/Lab 8/JustBNE/Eq01-Prime.gtkw"
+[timestart] 0
+[size] 920 960
+[pos] -1 -1
+*-29.378643 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.prime_tb.
+[treeopen] top.prime_tb.tb.
+[treeopen] top.prime_tb.tb.pcall.
+[treeopen] top.prime_tb.tb.ularg.
+[sst_width] 269
+[signals_width] 240
+[sst_expanded] 1
+[sst_vpaned_height] 282
+@28
+top.prime_tb.clk
+@22
+#{top.prime_tb.tb.op[5:0]} top.prime_tb.tb.op[5] top.prime_tb.tb.op[4] top.prime_tb.tb.op[3] top.prime_tb.tb.op[2] top.prime_tb.tb.op[1] top.prime_tb.tb.op[0]
+@24
++{PC} #{top.prime_tb.tb.pcall.pc_out[15:0]} top.prime_tb.tb.pcall.pc_out[15] top.prime_tb.tb.pcall.pc_out[14] top.prime_tb.tb.pcall.pc_out[13] top.prime_tb.tb.pcall.pc_out[12] top.prime_tb.tb.pcall.pc_out[11] top.prime_tb.tb.pcall.pc_out[10] top.prime_tb.tb.pcall.pc_out[9] top.prime_tb.tb.pcall.pc_out[8] top.prime_tb.tb.pcall.pc_out[7] top.prime_tb.tb.pcall.pc_out[6] top.prime_tb.tb.pcall.pc_out[5] top.prime_tb.tb.pcall.pc_out[4] top.prime_tb.tb.pcall.pc_out[3] top.prime_tb.tb.pcall.pc_out[2] top.prime_tb.tb.pcall.pc_out[1] top.prime_tb.tb.pcall.pc_out[0]
++{R6} #{top.prime_tb.tb.ularg.bank.conteudo_ram[6][15:0]} top.prime_tb.tb.ularg.bank.conteudo_ram[6][15] top.prime_tb.tb.ularg.bank.conteudo_ram[6][14] top.prime_tb.tb.ularg.bank.conteudo_ram[6][13] top.prime_tb.tb.ularg.bank.conteudo_ram[6][12] top.prime_tb.tb.ularg.bank.conteudo_ram[6][11] top.prime_tb.tb.ularg.bank.conteudo_ram[6][10] top.prime_tb.tb.ularg.bank.conteudo_ram[6][9] top.prime_tb.tb.ularg.bank.conteudo_ram[6][8] top.prime_tb.tb.ularg.bank.conteudo_ram[6][7] top.prime_tb.tb.ularg.bank.conteudo_ram[6][6] top.prime_tb.tb.ularg.bank.conteudo_ram[6][5] top.prime_tb.tb.ularg.bank.conteudo_ram[6][4] top.prime_tb.tb.ularg.bank.conteudo_ram[6][3] top.prime_tb.tb.ularg.bank.conteudo_ram[6][2] top.prime_tb.tb.ularg.bank.conteudo_ram[6][1] top.prime_tb.tb.ularg.bank.conteudo_ram[6][0]
++{R7} #{top.prime_tb.tb.ularg.bank.conteudo_ram[7][15:0]} top.prime_tb.tb.ularg.bank.conteudo_ram[7][15] top.prime_tb.tb.ularg.bank.conteudo_ram[7][14] top.prime_tb.tb.ularg.bank.conteudo_ram[7][13] top.prime_tb.tb.ularg.bank.conteudo_ram[7][12] top.prime_tb.tb.ularg.bank.conteudo_ram[7][11] top.prime_tb.tb.ularg.bank.conteudo_ram[7][10] top.prime_tb.tb.ularg.bank.conteudo_ram[7][9] top.prime_tb.tb.ularg.bank.conteudo_ram[7][8] top.prime_tb.tb.ularg.bank.conteudo_ram[7][7] top.prime_tb.tb.ularg.bank.conteudo_ram[7][6] top.prime_tb.tb.ularg.bank.conteudo_ram[7][5] top.prime_tb.tb.ularg.bank.conteudo_ram[7][4] top.prime_tb.tb.ularg.bank.conteudo_ram[7][3] top.prime_tb.tb.ularg.bank.conteudo_ram[7][2] top.prime_tb.tb.ularg.bank.conteudo_ram[7][1] top.prime_tb.tb.ularg.bank.conteudo_ram[7][0]
+[pattern_trace] 1
+[pattern_trace] 0
