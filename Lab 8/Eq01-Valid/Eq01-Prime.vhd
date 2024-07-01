@@ -15,8 +15,7 @@ use ieee.numeric_std.all;
 entity Prime is
 port( 	clk, rst:		  in std_logic;
         debug_reg:    in unsigned(4 downto 0);
-        debug_val:    out unsigned (15 downto 0)
-	);
+        debug_val:    out unsigned (15 downto 0));
 end entity;
 ------------------------------------------------------------------------
 architecture calculate of Prime is

@@ -27,8 +27,15 @@ architecture a_rom of rom is
 ------------------------------------------------------------------------
 	type mem is array (0 to 128) of unsigned(15 downto 0);
   constant conteudo_rom : mem := (
+    --Decidimos colocar R2 <= 'N' diretamente pelo RegFile.
+    
+    --O algoritmo eh baseado no seguinte teorema:
+    --Para todo inteiro n>2, se 'n' nao eh primo, entao
+    --'n' possui um divisor d tal que 1<d<=sqrt(n);
 
-    --1  => b"00100_110000_00110", --ADDI R4, C1;
+    --note tambem que, no laco checkPrime eh feito a verificacao
+    --somente dos numeros impares, ja que para n>2, se 'n' eh primo
+    -- entao 'n' nao eh par.
     2  => b"00001_110000_00001", --addi R1, 1;
     3  => b"00011_110000_00011", --addi R3, 3;
     4  => b"00100_110000_00010", --addi R4, 2;

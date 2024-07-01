@@ -10,5 +10,5 @@ DIVI: rrrrr001011iiiii (onde r = registrador 1 [de destino] e i = valor imediato
 BNE:  rrrrr001010iiiii (onde r = registrador 1 [de destino] e i = valor imediato)  -> BNE r, i      [PC <- PC+i+1 when R1/=r]
 MUL:  rrrrr010001RRRRR (onde r = registrador 1 [de destino] e R = registrador 2)   -> MUL r, R ->   [r <- r*R]
 BEQ:  rrrrr000010iiiii (onde r = registrador 1 [de destino] e i = valor imediato)  -> BEQ r, i      [PC <- PC+i+1 when R1==r]
-IT:   rrrrr011xxxRRRRR (onde r = registrador 1, R = registrador 2 e x = cond) 	   -> IT (cond), r, R -> [PC <- PC+1 when true, else PC <- PC+2]  
+IT:   rrrrr011xxxRRRRR (onde r = registrador 1, R = registrador 2 e x = cond) 	   -> IT (cond), r, R -> [PC <- PC+1 when r(cond)R  is true, else PC <- PC+2]  
 
