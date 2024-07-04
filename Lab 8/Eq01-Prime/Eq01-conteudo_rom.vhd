@@ -36,6 +36,7 @@ architecture a_rom of rom is
     --note tambem que, no laco checkPrime eh feito a verificacao
     --somente dos numeros impares, ja que para n>2, se 'n' eh primo
     -- entao 'n' nao eh par.
+
     2  => b"00001_110000_00001", --addi R1, 1;
     3  => b"00011_110000_00011", --addi R3, 3;
     4  => b"00100_110000_00010", --addi R4, 2;

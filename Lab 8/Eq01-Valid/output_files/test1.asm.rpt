@@ -1,5 +1,5 @@
 Assembler report for test1
-Sun Jun 30 19:32:54 2024
+Mon Jul  1 16:02:59 2024
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sun Jun 30 19:32:54 2024 ;
+; Assembler Status      ; Successful - Mon Jul  1 16:02:59 2024 ;
 ; Revision Name         ; test1                                 ;
 ; Top-level Entity Name ; MikroP                                ;
 ; Family                ; MAX 10                                ;
@@ -66,8 +66,8 @@ refer to the applicable agreement for further details.
 +----------------+--------------------+
 ; Option         ; Setting            ;
 +----------------+--------------------+
-; JTAG usercode  ; 0x00376C8B         ;
-; Checksum       ; 0x00376C8B         ;
+; JTAG usercode  ; 0x003762B0         ;
+; Checksum       ; 0x003762B0         ;
 +----------------+--------------------+
 
 
@@ -77,14 +77,14 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Jun 30 19:32:51 2024
+    Info: Processing started: Mon Jul  1 16:02:56 2024
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off FPGAEx3-rev1 -c test1
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 1012 megabytes
-    Info: Processing ended: Sun Jun 30 19:32:54 2024
+    Info: Peak virtual memory: 1017 megabytes
+    Info: Processing ended: Mon Jul  1 16:02:59 2024
     Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Total CPU time (on all processors): 00:00:03
 
 

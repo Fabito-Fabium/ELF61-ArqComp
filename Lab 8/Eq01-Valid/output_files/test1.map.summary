@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Sun Jun 30 19:32:32 2024
+Analysis & Synthesis Status : Successful - Mon Jul  1 16:02:36 2024
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : test1
 Top-level Entity Name : MikroP
 Family : MAX 10
 Total logic elements : 1,570
-    Total combinational functions : 1,335
+    Total combinational functions : 1,341
     Dedicated logic registers : 330
 Total registers : 330
 Total pins : 65

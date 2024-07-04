@@ -1,0 +1,37 @@
+v 4
+file . "Eq01-Prime_tb.vhd" "1db1f8579920403a8b7f7489fac91d4458c6d069" "20240701164759.933":
+  entity prime_tb at 12( 339) + 0 on 33;
+  architecture run_tb of prime_tb at 19( 441) + 0 on 34;
+file . "Eq01-Prime.vhd" "0b86e3f03a9b9a5ea108c9f63cdf5f868643498d" "20240701164759.933":
+  entity prime at 10( 337) + 0 on 31;
+  architecture calculate of prime at 21( 713) + 0 on 32;
+file . "Eq01-ROM_PC_UC.vhd" "03f6eba31f3443df5e0c96e98e7391a20f6ccf49" "20240701164759.920":
+  entity rom_pc_uc at 10( 337) + 0 on 11;
+  architecture integration of rom_pc_uc at 24( 848) + 0 on 12;
+file . "Eq01-ULA.vhd" "74324b5fe3952d78cd3c8e4389c6848ef0ba61cb" "20240701164759.921":
+  entity ula at 12( 506) + 0 on 13;
+  architecture ula_arch of ula at 29( 1016) + 0 on 14;
+file . "Eq01-ULARegs.vhd" "59a3f12ffdb35182a482389f6e009e7df7955d83" "20240701164759.921":
+  entity ularegs at 11( 338) + 0 on 15;
+  architecture op_ularegs of ularegs at 27( 1018) + 0 on 16;
+file . "Eq01-maq_estados.vhd" "eadb92408a112ae6831083e3989774937ef6fa88" "20240701164759.922":
+  entity maq_estados at 10( 337) + 0 on 17;
+  architecture change_state of maq_estados at 21( 666) + 0 on 18;
+file . "Eq01-program_counter.vhd" "01ade2ef4dc7fa4be8e897b1c89896d6a9e12ea0" "20240701164759.922":
+  entity program_counter at 10( 337) + 0 on 19;
+  architecture counting of program_counter at 28( 846) + 0 on 20;
+file . "Eq01-reg16bits.vhd" "c6eb24801f183240cdf93b1c758c269af19e8034" "20240701164759.923":
+  entity reg16bits at 10( 337) + 0 on 21;
+  architecture a_reg8bits of reg16bits at 24( 733) + 0 on 22;
+file . "Eq01-un_atom.vhd" "edf239dd428478ae914c663274b531ca49407306" "20240701164759.924":
+  entity un_atom at 10( 337) + 0 on 23;
+  architecture a_un_atom of un_atom at 23( 787) + 0 on 24;
+file . "Eq01-un_controle.vhd" "190471065ac26e1b9c4e5ca6db3a0eb6d0049c13" "20240701164759.925":
+  entity un_controle at 10( 337) + 0 on 25;
+  architecture a_un_controle of un_controle at 23( 790) + 0 on 26;
+file . "Eq01-conteudo_rom.vhd" "edb49ffff697ff59a2cd3b5febe6cf8939899257" "20240701164759.925":
+  entity rom at 14( 467) + 0 on 27;
+  architecture a_rom of rom at 26( 830) + 0 on 28;
+file . "Eq01-RegFile.vhd" "68e1cf26120ca736212fc2619cc2d8e305f3fec7" "20240701164759.926":
+  entity regfile at 14( 467) + 0 on 29;
+  architecture a_ram of regfile at 31( 1000) + 0 on 30;

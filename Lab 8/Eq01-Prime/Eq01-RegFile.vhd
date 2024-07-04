@@ -38,7 +38,7 @@ begin
 	begin
     if rst = '1' then
       conteudo_ram <= (others => (others => '0'));
-      conteudo_ram(2) <= x"fe00";
+      conteudo_ram(2) <= x"fff1";
 		elsif rising_edge(clk) then
 			if wr_en = '1' then
 				conteudo_ram(to_integer(A3)) <= WD3; 
